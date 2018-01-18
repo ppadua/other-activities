@@ -86,7 +86,7 @@ $(document).ready(function(){
 				for (var k = 0; k < json_data.sub_task_assigned_ids.length; k++) {
 					var user_id = users.map(a => a.value).indexOf(json_data.sub_task_assigned_ids[k]);
 
-					if(user_id != -1)
+					if(user_id != -1 && json_data.sub_task_assigned_ids[k] != json_data.main_assigned_person_id)
 						json_data.sub_task_assigned_person.push(users[user_id])
 				}
 
