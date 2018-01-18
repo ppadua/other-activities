@@ -1,0 +1,719 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	background-color: #DDDDDD !important;
+
+	#left_container{
+		background-color: #666666;
+		display: inline-block;
+		height: 97vh;
+		width: 15%;
+		color: white;
+		padding: 10px 10px;
+
+		h2{
+			margin: 0px;
+		}
+
+		>ul{
+			margin-top: 20px;
+		}
+
+		#main_projects{
+			li.active_project{
+				background-color: #008CE3;
+			}
+
+			li{
+				li{
+					padding-left: 25px;
+				}
+			}
+		}
+
+
+		ul{
+			padding: 0px;
+
+			>li{
+				>span{
+					font-size: 20px;
+				}
+
+
+				a{
+					color: white; 
+					span{
+						display: inline-block;
+						    vertical-align: middle;
+					}
+					span.project_color{
+						width: 15px;
+						height: 15px;
+						border: 2px solid white;
+					}
+					span.project_name{
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	#main_container{
+		display: inline-block;
+		height: 100vh;
+		vertical-align: top;   
+		width: 84%; 
+
+		#title_and_filter_content{
+			background-color: white;
+			height: 50px;
+			padding: 10px;
+			margin-left: -3px;
+			width: 100.8%;
+
+			h3, ul, form{
+				display: inline-block;
+				vertical-align: middle
+			}
+
+			h3, ul{
+				margin: 0px !important;
+			}
+
+			ul{
+				li{
+					display: inline-block;
+				}
+			}
+
+			#task_details{
+				padding-left: 65px;
+
+				li{
+					border: 1px solid #2B78E4;
+					padding: 1px;
+
+					span:nth-child(1){
+						display: inline-block;
+						background-color: #2B78E4;
+					}
+
+				}
+
+				li:nth-child(1){
+					span:nth-child(1){
+						width: 81px;
+						text-align: center;
+						color: white;
+						font-weight: bold;
+					}
+				}
+				li:nth-child(2){
+					span:nth-child(1){
+						width: 83px;
+						text-align: center;
+						color: white;
+						font-weight: bold;
+					}
+				}
+				li:nth-child(3){
+					span:nth-child(1){
+						width: 35px;
+						text-align: center;
+						color: white;
+						font-weight: bold;
+					}
+				}
+			}
+
+			#main_task_filters{
+				ul{
+					padding: 0px !important;
+
+					>li{
+						vertical-align: middle;
+					}
+
+					.bootstrap-select{
+						width: 90px;
+						button{
+							padding: 1px;
+						}
+					}
+
+					.search_filter{
+						height: 34px;
+   						width: 156px;
+					}
+
+					input[type=button]{
+						height: 25px;
+						width : 66px;
+						padding: 0px;
+					}
+				}
+			}
+		}
+
+		#main_content{
+			padding: 20px 0px 0px 20px;
+
+			#left_content{
+				background-color: #FFFFFF;
+				display: inline-block;
+				height: 90vh;
+				width: 49%;
+				vertical-align: top;
+
+				#add_main_task{
+					padding: 5px 10px;
+					border-bottom: 1px solid #EEEEEE;
+					.bootstrap-select{
+						width: 120px;
+					}
+				}
+
+				#main_tasks{
+					padding: 15px 0px 15px 15px;
+					overflow-y: scroll;
+					overflow-x: hidden;
+					height: 85vh;
+
+					>span{
+						font-size: 16px;
+						font-weight: bold;
+					}
+
+					>ul{
+						border-top: 1px solid #2B78E4;
+						width: 99%;
+						padding: 0px;
+						margin: 0px;
+						padding-top: 1px;
+						min-height: 20px;
+
+						>li{
+							border-top: 1px solid white;
+							border-bottom: 1px solid #E0E6E8;
+
+							.task_container{
+								padding: 5px 0px;
+
+								>div{
+									display: inline-block;
+									vertical-align: middle
+								}
+
+								.fa-sort{
+									opacity: 0;
+								}
+								
+
+								.estimated_points{
+									width: 40px;
+
+									input{
+										text-align: center;
+										border: 1px solid white;
+									    height: 24px;
+									    padding: 0px 2px !important;
+									    font-size: 11px;
+									}
+								}
+
+								.task_index{
+									width: 10px;
+
+									span{
+										position: relative;
+									    left: -10px;
+									}
+								}
+
+								.main_task_detail{
+									.bootstrap-select{
+										width: 65px;
+
+										button{
+											padding-bottom: 1px;
+  											padding-top: 1px;
+  											padding-left: 5px;
+											padding-right: 10px;
+											border: 1px solid white;
+
+											.filter-option{
+												font-size: 13px;
+												line-height: 19px;
+											}
+
+											.caret{
+												right: 2px;
+											}
+										}
+									}
+								}
+
+								.dragged_icon{
+									margin: 0px 5px 0px 0px;
+								}
+
+								.task_title{
+									width: 185px;
+
+									input{
+									    height: 24px;
+										border: 1px solid white;
+									}
+								}
+
+								.project_tags{
+									font-size: 11px;
+									color: white;
+
+									ul{
+										padding: 0px;
+
+										li{
+										    overflow: hidden;
+										    text-overflow: ellipsis;
+										    margin-top: 2px;
+										    width: 42px;
+										    white-space: nowrap;
+										    display: inline-block;
+										    border-radius: 100px;
+										    padding: 0px 4px;
+											color: white;
+										}
+									}
+								}
+
+								.task_assigned_to{
+									img{
+										width: 25px;
+									    height: 25px;
+									    border-radius: 100%;
+										position: relative;
+									}
+									
+									span{
+										display: inline-block;
+										width: 13px;
+										height: 13px;
+										background-color: red;
+										text-align: center;
+										font-size: 10px;
+										color: white;
+										font-weight: bold;
+										border-radius: 2px;
+										position: relative;
+										right: 10px;
+										bottom: 8px;
+									}
+
+									span.is_zero{
+										background-color: transparent;
+									}
+								}
+
+								.main_task_status{
+									.bootstrap-select{
+										width: auto !important;
+									}
+
+									.main_task_status_select{ 
+										button{
+											padding: 0px !important;
+										    border: none;
+										    width: auto !important;
+										    background-color: white !important;
+									   		border-color: white !important;
+									   		height: 22px;
+
+											>span{
+												width: auto !important;
+											}
+										}
+
+
+										.bs-caret{
+											display: none;
+										}
+
+										.filter-option{
+
+										}
+									}
+								}
+
+								&:hover{
+									.fa-sort{
+										opacity: 1;
+									}
+
+									input{
+										border: 1px solid #CCCCCC;
+									}
+
+									.main_task_detail .bootstrap-select button{
+										border: 1px solid #CCCCCC;
+									}
+								}
+							}
+
+							&:hover{
+								border-top: 1px solid #14AAF5;
+								border-bottom: 1px solid #14AAF5;
+								background-color: #EDF8FF
+							}
+						}
+					}
+				}
+			}
+
+			#right_content{
+				margin-left: 10px;
+				vertical-align: top;
+				background-color: white;
+				display: inline-block;
+				width: 49%;
+				height: 90vh;
+
+				#add_sub_task{
+					padding: 3px 10px;
+					border-bottom: 1px solid #E6E6E6;
+
+					>div{
+						display: inline-block;
+					}
+
+					#add_sub_task_details{
+						>div{
+							display: inline-block;
+							vertical-align: middle;
+						}
+
+						.person_assigned_to{
+						    border-radius: 100%;
+						    padding: 3px;
+
+							img{
+								width: 30px;
+								border-radius: 100%;
+							}
+						}
+
+						.main_person_assigned{
+							border: 1px solid #DDDDDD;
+						}
+						
+						#project_assigned_to{
+							ul{
+								padding: 0px;
+								margin: 0px;
+
+								li{
+								    background-color: pink;
+								    width: 62px;
+									border-radius: 100px;
+									font-size: 11px;
+								    display: inline-block;
+
+								    span{
+								    	display: inline-block;
+								  	  	vertical-align: middle;
+								    }
+
+									span:nth-child(1){
+										overflow: hidden;
+									    text-overflow: ellipsis;
+									    margin-top: 2px;
+								  		width: 43px;
+									    white-space: nowrap;
+									    display: inline-block;
+									    padding: 0px 4px;
+										color: white;
+									}
+								}
+							}
+						}
+						#add_project_assigned_to{
+							margin-top: 3px;
+							#add_project_btn{
+								font-size: 20px;
+							}
+						}
+					}
+
+					#crud_subtask{
+						>div{
+							display: inline-block;
+							vertical-align: middle;
+							margin-top: 2px;
+						}
+
+						#crud_delete_subtask{
+							.glyphicon{
+								font-size: 18px;
+							}
+						}
+					}
+				}
+
+				#main_task_status_and_details{
+					padding: 10px 20px;
+
+					>div{
+						display: inline-block;
+						vertical-align: middle;
+					}
+
+					textarea {
+					    resize: none;
+					}
+
+					#status_and_details{
+						>input, >div{
+							display: inline-block;
+						}
+
+						>input{
+							width: 60px;
+							height: 23px;
+							margin-left: 10px;
+							text-align: center;
+						}
+
+						.bootstrap-select{
+							margin-left: 10px;
+							width: 90px;
+
+							button{
+								padding: 1px 8px;
+							}
+						}
+					}
+
+					#main_task_title_and_description{
+						width: 100%;
+						margin-top: 10px;
+						textarea{
+							border: 1px solid white;
+						}
+
+						&:hover{
+							textarea{
+								border: 1px solid #C1BDBD;
+							}
+						}
+
+						textarea{
+							width: 100%;
+						}
+						textarea:nth-child(1){
+							height: 100px;
+							margin-bottom: 10px;
+						}
+
+					}
+				}
+
+				#sub_tasks_section{
+					padding: 15px 0px 15px 15px;
+					overflow-y: scroll;
+					overflow-x: hidden;
+					height: 54vh;
+
+					>span{
+						font-size: 16px;
+						font-weight: bold;
+					}
+
+					>ul{
+						border-top: 1px solid #2B78E4;
+						width: 99%;
+						padding: 0px;
+						margin: 0px;
+						padding-top: 1px;
+						min-height: 20px;
+
+						>li{
+							border-top: 1px solid white;
+							border-bottom: 1px solid #E0E6E8;
+
+							.task_container{
+								padding: 5px 0px;
+
+								>div{
+									display: inline-block;
+									vertical-align: middle
+								}
+
+								.fa-sort{
+									opacity: 0;
+								}
+								
+
+								.estimated_points{
+									width: 40px;
+
+									input{
+										text-align: center;
+										border: 1px solid white;
+									    height: 24px;
+									    padding: 0px 2px !important;
+									    font-size: 11px;
+									}
+								}
+
+								.task_index{
+									width: 10px;
+
+									span{
+										position: relative;
+									    left: -10px;
+									}
+								}
+
+								.main_task_detail{
+									.bootstrap-select{
+										width: 65px;
+
+										button{
+											padding-bottom: 1px;
+  											padding-top: 1px;
+  											padding-left: 5px;
+											padding-right: 10px;
+											border: 1px solid white;
+
+											.filter-option{
+												font-size: 13px;
+												line-height: 19px;
+											}
+
+											.caret{
+												right: 2px;
+											}
+										}
+									}
+								}
+
+								.dragged_icon{
+									margin: 0px 5px 0px 0px;
+								}
+
+								.task_title{
+									width: 276px;
+
+									input{
+									    height: 24px;
+										border: 1px solid white;
+									}
+								}
+
+								// .project_select_tags{
+								.task_assigned_to{
+									.bootstrap-select{
+										 width: 62px;
+
+										button{
+											padding: 0px;
+						 					border: none;
+
+						 					span{
+						 						text-align: center;
+												height: 18px;
+												font-size: 11px;
+												line-height: 17px;
+												padding: 1px;
+						 					}
+
+
+											.bs-caret{
+												display: none;
+											}
+										}
+					 					.dropdown-menu{
+					 						left: -60px !important;
+					 						width: 200px!important;
+					 					}
+									}
+								}
+
+								.task_assigned_to{
+									>img{
+										width: 25px;
+									    height: 25px;
+									    border-radius: 100%;
+										position: relative;
+									}
+
+									span.glyphicon-trash {
+										opacity: 0;
+									}
+								}
+
+								&:hover{
+									span.glyphicon-trash {
+										opacity: 1;
+									}
+								}
+
+								.main_task_status{
+									.bootstrap-select{
+										width: auto !important;
+									}
+
+									.main_task_status_select{ 
+										button{
+											padding: 0px !important;
+										    border: none;
+										    width: auto !important;
+										    background-color: white !important;
+									   		border-color: white !important;
+									   		height: 22px;
+
+											>span{
+												width: auto !important;
+											}
+										}
+
+
+										.bs-caret{
+											display: none;
+										}
+
+										.filter-option{
+
+										}
+									}
+								}
+
+								&:hover{
+									.fa-sort{
+										opacity: 1;
+									}
+
+									input{
+										border: 1px solid #CCCCCC;
+									}
+
+									.main_task_detail .bootstrap-select button{
+										border: 1px solid #CCCCCC;
+									}
+								}
+							}
+
+							&:hover{
+								border-top: 1px solid #14AAF5;
+								border-bottom: 1px solid #14AAF5;
+								background-color: #EDF8FF
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

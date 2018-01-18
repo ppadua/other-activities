@@ -1,0 +1,670 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #DDDDDD !important;
+}
+html #left_container,
+body #left_container {
+  background-color: #666666;
+  display: inline-block;
+  height: 97vh;
+  width: 15%;
+  color: white;
+  padding: 10px 10px;
+}
+html #left_container h2,
+body #left_container h2 {
+  margin: 0px;
+}
+html #left_container > ul,
+body #left_container > ul {
+  margin-top: 20px;
+}
+html #left_container #main_projects li.active_project,
+body #left_container #main_projects li.active_project {
+  background-color: #008CE3;
+}
+html #left_container #main_projects li li,
+body #left_container #main_projects li li {
+  padding-left: 25px;
+}
+html #left_container ul,
+body #left_container ul {
+  padding: 0px;
+}
+html #left_container ul > li > span,
+body #left_container ul > li > span {
+  font-size: 20px;
+}
+html #left_container ul > li a,
+body #left_container ul > li a {
+  color: white;
+}
+html #left_container ul > li a span,
+body #left_container ul > li a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+html #left_container ul > li a span.project_color,
+body #left_container ul > li a span.project_color {
+  width: 15px;
+  height: 15px;
+  border: 2px solid white;
+}
+html #left_container ul > li a span.project_name,
+body #left_container ul > li a span.project_name {
+  margin-left: 10px;
+}
+html #main_container,
+body #main_container {
+  display: inline-block;
+  height: 100vh;
+  vertical-align: top;
+  width: 84%;
+}
+html #main_container #title_and_filter_content,
+body #main_container #title_and_filter_content {
+  background-color: white;
+  height: 50px;
+  padding: 10px;
+  margin-left: -3px;
+  width: 100.8%;
+}
+html #main_container #title_and_filter_content h3,
+body #main_container #title_and_filter_content h3,
+html #main_container #title_and_filter_content ul,
+body #main_container #title_and_filter_content ul,
+html #main_container #title_and_filter_content form,
+body #main_container #title_and_filter_content form {
+  display: inline-block;
+  vertical-align: middle;
+}
+html #main_container #title_and_filter_content h3,
+body #main_container #title_and_filter_content h3,
+html #main_container #title_and_filter_content ul,
+body #main_container #title_and_filter_content ul {
+  margin: 0px !important;
+}
+html #main_container #title_and_filter_content ul li,
+body #main_container #title_and_filter_content ul li {
+  display: inline-block;
+}
+html #main_container #title_and_filter_content #task_details,
+body #main_container #title_and_filter_content #task_details {
+  padding-left: 65px;
+}
+html #main_container #title_and_filter_content #task_details li,
+body #main_container #title_and_filter_content #task_details li {
+  border: 1px solid #2B78E4;
+  padding: 1px;
+}
+html #main_container #title_and_filter_content #task_details li span:nth-child(1),
+body #main_container #title_and_filter_content #task_details li span:nth-child(1) {
+  display: inline-block;
+  background-color: #2B78E4;
+}
+html #main_container #title_and_filter_content #task_details li:nth-child(1) span:nth-child(1),
+body #main_container #title_and_filter_content #task_details li:nth-child(1) span:nth-child(1) {
+  width: 81px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+html #main_container #title_and_filter_content #task_details li:nth-child(2) span:nth-child(1),
+body #main_container #title_and_filter_content #task_details li:nth-child(2) span:nth-child(1) {
+  width: 83px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+html #main_container #title_and_filter_content #task_details li:nth-child(3) span:nth-child(1),
+body #main_container #title_and_filter_content #task_details li:nth-child(3) span:nth-child(1) {
+  width: 35px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+html #main_container #title_and_filter_content #main_task_filters ul,
+body #main_container #title_and_filter_content #main_task_filters ul {
+  padding: 0px !important;
+}
+html #main_container #title_and_filter_content #main_task_filters ul > li,
+body #main_container #title_and_filter_content #main_task_filters ul > li {
+  vertical-align: middle;
+}
+html #main_container #title_and_filter_content #main_task_filters ul .bootstrap-select,
+body #main_container #title_and_filter_content #main_task_filters ul .bootstrap-select {
+  width: 90px;
+}
+html #main_container #title_and_filter_content #main_task_filters ul .bootstrap-select button,
+body #main_container #title_and_filter_content #main_task_filters ul .bootstrap-select button {
+  padding: 1px;
+}
+html #main_container #title_and_filter_content #main_task_filters ul .search_filter,
+body #main_container #title_and_filter_content #main_task_filters ul .search_filter {
+  height: 34px;
+  width: 156px;
+}
+html #main_container #title_and_filter_content #main_task_filters ul input[type=button],
+body #main_container #title_and_filter_content #main_task_filters ul input[type=button] {
+  height: 25px;
+  width: 66px;
+  padding: 0px;
+}
+html #main_container #main_content,
+body #main_container #main_content {
+  padding: 20px 0px 0px 20px;
+}
+html #main_container #main_content #left_content,
+body #main_container #main_content #left_content {
+  background-color: #FFFFFF;
+  display: inline-block;
+  height: 90vh;
+  width: 49%;
+  vertical-align: top;
+}
+html #main_container #main_content #left_content #add_main_task,
+body #main_container #main_content #left_content #add_main_task {
+  padding: 5px 10px;
+  border-bottom: 1px solid #EEEEEE;
+}
+html #main_container #main_content #left_content #add_main_task .bootstrap-select,
+body #main_container #main_content #left_content #add_main_task .bootstrap-select {
+  width: 120px;
+}
+html #main_container #main_content #left_content #main_tasks,
+body #main_container #main_content #left_content #main_tasks {
+  padding: 15px 0px 15px 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 85vh;
+}
+html #main_container #main_content #left_content #main_tasks > span,
+body #main_container #main_content #left_content #main_tasks > span {
+  font-size: 16px;
+  font-weight: bold;
+}
+html #main_container #main_content #left_content #main_tasks > ul,
+body #main_container #main_content #left_content #main_tasks > ul {
+  border-top: 1px solid #2B78E4;
+  width: 99%;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 1px;
+  min-height: 20px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li,
+body #main_container #main_content #left_content #main_tasks > ul > li {
+  border-top: 1px solid white;
+  border-bottom: 1px solid #E0E6E8;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container {
+  padding: 5px 0px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container > div,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .fa-sort,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .fa-sort {
+  opacity: 0;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .estimated_points,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .estimated_points {
+  width: 40px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .estimated_points input,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .estimated_points input {
+  text-align: center;
+  border: 1px solid white;
+  height: 24px;
+  padding: 0px 2px !important;
+  font-size: 11px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_index,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_index {
+  width: 10px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_index span,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_index span {
+  position: relative;
+  left: -10px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_detail .bootstrap-select,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_detail .bootstrap-select {
+  width: 65px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_detail .bootstrap-select button,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_detail .bootstrap-select button {
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 5px;
+  padding-right: 10px;
+  border: 1px solid white;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_detail .bootstrap-select button .filter-option,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_detail .bootstrap-select button .filter-option {
+  font-size: 13px;
+  line-height: 19px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_detail .bootstrap-select button .caret,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_detail .bootstrap-select button .caret {
+  right: 2px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .dragged_icon,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .dragged_icon {
+  margin: 0px 5px 0px 0px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_title,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_title {
+  width: 185px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_title input,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_title input {
+  height: 24px;
+  border: 1px solid white;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .project_tags,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .project_tags {
+  font-size: 11px;
+  color: white;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .project_tags ul,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .project_tags ul {
+  padding: 0px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .project_tags ul li,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .project_tags ul li {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+  width: 42px;
+  white-space: nowrap;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 0px 4px;
+  color: white;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_assigned_to img,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_assigned_to img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  position: relative;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_assigned_to span,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_assigned_to span {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: red;
+  text-align: center;
+  font-size: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  position: relative;
+  right: 10px;
+  bottom: 8px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_assigned_to span.is_zero,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .task_assigned_to span.is_zero {
+  background-color: transparent;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_status .bootstrap-select,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_status .bootstrap-select {
+  width: auto !important;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_status .main_task_status_select button,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_status .main_task_status_select button {
+  padding: 0px !important;
+  border: none;
+  width: auto !important;
+  background-color: white !important;
+  border-color: white !important;
+  height: 22px;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_status .main_task_status_select button > span,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_status .main_task_status_select button > span {
+  width: auto !important;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_status .main_task_status_select .bs-caret,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container .main_task_status .main_task_status_select .bs-caret {
+  display: none;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container:hover .fa-sort,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container:hover .fa-sort {
+  opacity: 1;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container:hover input,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container:hover input {
+  border: 1px solid #CCCCCC;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li .task_container:hover .main_task_detail .bootstrap-select button,
+body #main_container #main_content #left_content #main_tasks > ul > li .task_container:hover .main_task_detail .bootstrap-select button {
+  border: 1px solid #CCCCCC;
+}
+html #main_container #main_content #left_content #main_tasks > ul > li:hover,
+body #main_container #main_content #left_content #main_tasks > ul > li:hover {
+  border-top: 1px solid #14AAF5;
+  border-bottom: 1px solid #14AAF5;
+  background-color: #edf8ff;
+}
+html #main_container #main_content #right_content,
+body #main_container #main_content #right_content {
+  margin-left: 10px;
+  vertical-align: top;
+  background-color: white;
+  display: inline-block;
+  width: 49%;
+  height: 90vh;
+}
+html #main_container #main_content #right_content #add_sub_task,
+body #main_container #main_content #right_content #add_sub_task {
+  padding: 3px 10px;
+  border-bottom: 1px solid #E6E6E6;
+}
+html #main_container #main_content #right_content #add_sub_task > div,
+body #main_container #main_content #right_content #add_sub_task > div {
+  display: inline-block;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details > div,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details .person_assigned_to,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details .person_assigned_to {
+  border-radius: 100%;
+  padding: 3px;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details .person_assigned_to img,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details .person_assigned_to img {
+  width: 30px;
+  border-radius: 100%;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details .main_person_assigned,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details .main_person_assigned {
+  border: 1px solid #DDDDDD;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details #project_assigned_to ul,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details #project_assigned_to ul {
+  padding: 0px;
+  margin: 0px;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details #project_assigned_to ul li,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details #project_assigned_to ul li {
+  background-color: pink;
+  width: 62px;
+  border-radius: 100px;
+  font-size: 11px;
+  display: inline-block;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details #project_assigned_to ul li span,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details #project_assigned_to ul li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details #project_assigned_to ul li span:nth-child(1),
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details #project_assigned_to ul li span:nth-child(1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 2px;
+  width: 43px;
+  white-space: nowrap;
+  display: inline-block;
+  padding: 0px 4px;
+  color: white;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details #add_project_assigned_to,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details #add_project_assigned_to {
+  margin-top: 3px;
+}
+html #main_container #main_content #right_content #add_sub_task #add_sub_task_details #add_project_assigned_to #add_project_btn,
+body #main_container #main_content #right_content #add_sub_task #add_sub_task_details #add_project_assigned_to #add_project_btn {
+  font-size: 20px;
+}
+html #main_container #main_content #right_content #add_sub_task #crud_subtask > div,
+body #main_container #main_content #right_content #add_sub_task #crud_subtask > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 2px;
+}
+html #main_container #main_content #right_content #add_sub_task #crud_subtask #crud_delete_subtask .glyphicon,
+body #main_container #main_content #right_content #add_sub_task #crud_subtask #crud_delete_subtask .glyphicon {
+  font-size: 18px;
+}
+html #main_container #main_content #right_content #main_task_status_and_details,
+body #main_container #main_content #right_content #main_task_status_and_details {
+  padding: 10px 20px;
+}
+html #main_container #main_content #right_content #main_task_status_and_details > div,
+body #main_container #main_content #right_content #main_task_status_and_details > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+html #main_container #main_content #right_content #main_task_status_and_details textarea,
+body #main_container #main_content #right_content #main_task_status_and_details textarea {
+  resize: none;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #status_and_details > input,
+body #main_container #main_content #right_content #main_task_status_and_details #status_and_details > input,
+html #main_container #main_content #right_content #main_task_status_and_details #status_and_details > div,
+body #main_container #main_content #right_content #main_task_status_and_details #status_and_details > div {
+  display: inline-block;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #status_and_details > input,
+body #main_container #main_content #right_content #main_task_status_and_details #status_and_details > input {
+  width: 60px;
+  height: 23px;
+  margin-left: 10px;
+  text-align: center;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #status_and_details .bootstrap-select,
+body #main_container #main_content #right_content #main_task_status_and_details #status_and_details .bootstrap-select {
+  margin-left: 10px;
+  width: 90px;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #status_and_details .bootstrap-select button,
+body #main_container #main_content #right_content #main_task_status_and_details #status_and_details .bootstrap-select button {
+  padding: 1px 8px;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description,
+body #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description {
+  width: 100%;
+  margin-top: 10px;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description textarea,
+body #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description textarea {
+  border: 1px solid white;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description:hover textarea,
+body #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description:hover textarea {
+  border: 1px solid #C1BDBD;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description textarea,
+body #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description textarea {
+  width: 100%;
+}
+html #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description textarea:nth-child(1),
+body #main_container #main_content #right_content #main_task_status_and_details #main_task_title_and_description textarea:nth-child(1) {
+  height: 100px;
+  margin-bottom: 10px;
+}
+html #main_container #main_content #right_content #sub_tasks_section,
+body #main_container #main_content #right_content #sub_tasks_section {
+  padding: 15px 0px 15px 15px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 54vh;
+}
+html #main_container #main_content #right_content #sub_tasks_section > span,
+body #main_container #main_content #right_content #sub_tasks_section > span {
+  font-size: 16px;
+  font-weight: bold;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul,
+body #main_container #main_content #right_content #sub_tasks_section > ul {
+  border-top: 1px solid #2B78E4;
+  width: 99%;
+  padding: 0px;
+  margin: 0px;
+  padding-top: 1px;
+  min-height: 20px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li {
+  border-top: 1px solid white;
+  border-bottom: 1px solid #E0E6E8;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container {
+  padding: 5px 0px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container > div,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .fa-sort,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .fa-sort {
+  opacity: 0;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .estimated_points,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .estimated_points {
+  width: 40px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .estimated_points input,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .estimated_points input {
+  text-align: center;
+  border: 1px solid white;
+  height: 24px;
+  padding: 0px 2px !important;
+  font-size: 11px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_index,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_index {
+  width: 10px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_index span,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_index span {
+  position: relative;
+  left: -10px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_detail .bootstrap-select,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_detail .bootstrap-select {
+  width: 65px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_detail .bootstrap-select button,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_detail .bootstrap-select button {
+  padding-bottom: 1px;
+  padding-top: 1px;
+  padding-left: 5px;
+  padding-right: 10px;
+  border: 1px solid white;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_detail .bootstrap-select button .filter-option,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_detail .bootstrap-select button .filter-option {
+  font-size: 13px;
+  line-height: 19px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_detail .bootstrap-select button .caret,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_detail .bootstrap-select button .caret {
+  right: 2px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .dragged_icon,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .dragged_icon {
+  margin: 0px 5px 0px 0px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_title,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_title {
+  width: 276px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_title input,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_title input {
+  height: 24px;
+  border: 1px solid white;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select {
+  width: 62px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select button,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select button {
+  padding: 0px;
+  border: none;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select button span,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select button span {
+  text-align: center;
+  height: 18px;
+  font-size: 11px;
+  line-height: 17px;
+  padding: 1px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select button .bs-caret,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select button .bs-caret {
+  display: none;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select .dropdown-menu,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to .bootstrap-select .dropdown-menu {
+  left: -60px !important;
+  width: 200px!important;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to > img,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to > img {
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  position: relative;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to span.glyphicon-trash,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .task_assigned_to span.glyphicon-trash {
+  opacity: 0;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container:hover span.glyphicon-trash,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container:hover span.glyphicon-trash {
+  opacity: 1;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_status .bootstrap-select,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_status .bootstrap-select {
+  width: auto !important;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_status .main_task_status_select button,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_status .main_task_status_select button {
+  padding: 0px !important;
+  border: none;
+  width: auto !important;
+  background-color: white !important;
+  border-color: white !important;
+  height: 22px;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_status .main_task_status_select button > span,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_status .main_task_status_select button > span {
+  width: auto !important;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_status .main_task_status_select .bs-caret,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container .main_task_status .main_task_status_select .bs-caret {
+  display: none;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container:hover .fa-sort,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container:hover .fa-sort {
+  opacity: 1;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container:hover input,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container:hover input {
+  border: 1px solid #CCCCCC;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container:hover .main_task_detail .bootstrap-select button,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li .task_container:hover .main_task_detail .bootstrap-select button {
+  border: 1px solid #CCCCCC;
+}
+html #main_container #main_content #right_content #sub_tasks_section > ul > li:hover,
+body #main_container #main_content #right_content #sub_tasks_section > ul > li:hover {
+  border-top: 1px solid #14AAF5;
+  border-bottom: 1px solid #14AAF5;
+  background-color: #edf8ff;
+}
