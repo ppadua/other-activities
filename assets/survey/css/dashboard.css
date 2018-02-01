@@ -1,5 +1,7 @@
 #wrapper #content {
   padding: 10px;
+  width: 34%;
+  border: 1px solid black;
 }
 #wrapper #content #breadcrumb {
   padding: 10px;
@@ -7,6 +9,7 @@
 #wrapper #content #breadcrumb li {
   display: inline-block;
   margin-left: 10px;
+  font-weight: bold;
 }
 #wrapper #content #breadcrumb li a {
   text-decoration: none;
@@ -15,7 +18,7 @@
 }
 #wrapper #content #user_info {
   padding: 10px;
-  width: 30%;
+  width: 95%;
 }
 #wrapper #content #user_info .user_info > div ul {
   margin: 0px 10px 10px 20px;
@@ -36,4 +39,25 @@
 #wrapper #content #user_info .user_info .button_click button {
   height: 30px;
   width: 150px;
+}
+#wrapper #content #user_info .user_info .button_click input[type=submit] {
+  height: 30px;
+  width: 150px;
+  background-color: green;
+  border: 1px solid green;
+  color: white;
+}
+#wrapper #terminate_content {
+  text-align: center;
+  font-size: 20px;
+  width: 50%;
+  margin: 0px auto;
+  margin-top: 10%;
+}
+#wrapper #ty_content {
+  text-align: center;
+  font-size: 20px;
+  width: 50%;
+  margin: 0px auto;
+  margin-top: 10%;
 }

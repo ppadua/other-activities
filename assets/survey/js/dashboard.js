@@ -100,20 +100,34 @@ $(document).ready(function(){
         if (data_object.user_employed != undefined) data_object.user_employed = data_object.user_employed.toString();
         if (data_object.user_income != undefined) data_object.user_income = data_object.user_income.toString();
 
-        $.ajax({
-            url: 'https://script.google.com/a/village88.com/macros/s/AKfycbxCmWZugkCInqF9ijd64MbszvVLH9dsjsqiUZflq9dN9PfKCQ/exec',
-            method: "GET",
-            dataType: "jsonp",
-            data: data_object,
-            success : function(data){
-                alert("success")
-            },
-            error : function(data){
-                alert("success")
-            }
-        })
+        var words = $(this).find(".other_info textarea").val().trim().split(' ').length;
+        if($(this).find(".other_info textarea").val().trim() != "" && words > 2){
+            $(".button_click input[type=submit]").attr("disabled", "disabled");
+            $(this).find(".other_info textarea").removeClass("input_error");
+
+            $.ajax({
+                url: 'https://script.google.com/a/village88.com/macros/s/AKfycbxCmWZugkCInqF9ijd64MbszvVLH9dsjsqiUZflq9dN9PfKCQ/exec',
+                method: "GET",
+                dataType: "jsonp",
+                data: data_object,
+                success : function(data){
+                    success_message();
+                },
+                error : function(data){
+                    success_message();
+                }
+            })
+        }
+        else{
+            $(this).find(".other_info textarea").addClass("input_error");
+        }
 
         return false;
     })
 
+    function success_message(){
+        $("#terminate_content").remove();
+        $("#content").remove();
+        $("#ty_content").removeClass("hidden");
+    }
 });

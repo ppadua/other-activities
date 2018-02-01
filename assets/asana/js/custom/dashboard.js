@@ -263,7 +263,7 @@ $(document).ready(function(){
 
 	$("body").on("keyup", ".estimated_points input, .task_title input, #main_task_title_and_description textarea:eq(0)", function(){
 		var input_value = $(this);
-		var task_id = tasks.map(a => a.task_id).indexOf(parseInt(input_value.closest("li").attr("data-task-id")));
+		var task_id = tasks.map(a => a.task_id).indexOf(parseInt(input_value.closest("li").attr("data-task-id") ? input_value.closest("li").attr("data-task-id") : input_value.closest("#right_content").attr("data-main-task-id")));
 
 		if(tasks[task_id].task_id == input_value.closest("li").attr("data-task-id")){
 			if(input_value.closest(".estimated_points").length == 1)
@@ -475,11 +475,12 @@ $(document).ready(function(){
 	$("body").on("click", "#crud_delete_subtask", function(){
 		var confirmation = confirm("Are you sure to delete this task?");
 		var task = tasks.map(a => a.task_id).indexOf(parseInt($(this).closest("#right_content").attr("data-main-task-id")))
-
+		console.log(task)
 		if (confirmation == true) {
 			tasks.splice(task, 1);
 			$("#right_content").addClass("hidden");
-			show_main_tasks();
+			$("#main_tasks .active_main_task").remove()
+			// show_main_tasks();
 		}
 	})
 

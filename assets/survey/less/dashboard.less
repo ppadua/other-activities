@@ -1,12 +1,15 @@
 #wrapper{
     #content{
         padding: 10px;
+        width: 34%;
+        border: 1px solid black;
 
         #breadcrumb{
             padding: 10px;
             li{
                 display: inline-block;
                 margin-left: 10px;
+                font-weight: bold;
 
                 a{
                     text-decoration: none;
@@ -18,7 +21,7 @@
 
         #user_info{
             padding: 10px;
-            width: 30%;
+            width: 95%;
 
             .user_info{
                 >div{
@@ -45,8 +48,32 @@
                         height: 30px;
                         width: 150px;
                     }
+
+                    input[type=submit]{
+                        height: 30px;
+                        width: 150px;
+                        background-color: green;
+                        border: 1px solid green;
+                        color: white;
+                    }
                 }
             }
         }
+    }
+
+    #terminate_content{
+        text-align: center;
+        font-size: 20px;
+        width: 50%;
+        margin: 0px auto;
+        margin-top: 10%;
+    }
+
+    #ty_content{
+        text-align: center;
+        font-size: 20px;
+        width: 50%;
+        margin: 0px auto;
+        margin-top: 10%;
     }
 }

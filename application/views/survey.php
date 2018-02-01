@@ -241,6 +241,9 @@
 		<div id="terminate_content" class="hidden">
 			We're sorry. You do not meet the qualifications for this survey. We sincereley thank you and appreciate your time, dedication, and continued participation in our online surveys.
 		</div>
+		<div id="ty_content" class="hidden">
+			Thank you for participation in our online surveys.
+		</div>
 	</div>
 </body>
 </html>
