@@ -47,7 +47,7 @@ $(document).ready(function(){
 			task_title : "",
 			task_description  : "",
 			main_assigned_person_id : 1,
-			main_assigned_person_image : "../assets/images/no_image.png",
+			main_assigned_person_image : "../assets/asana/images/no_image.png",
 			main_project_tag : [{project_id: main_project.attr("data-project-id"), project_name: main_project.find(".project_name").text(), project_color: main_project.find(".project_color").attr("data-project-color")}],
 			sub_project_tag : [],
 			sub_tasks : []
@@ -107,10 +107,10 @@ $(document).ready(function(){
 
 		if(mark_task.hasClass("mark_task") && (mark_task.closest("#left_content").length == 1 || mark_task.closest("#sub_tasks_section").length == 1)){
 			if(mark_task.hasClass("fa-check-circle-o")){
-				if(mark_task.closest(".check_icon").siblings(".task_title").children("input").val().trim() != "" && mark_task.closest(".check_icon").siblings(".task_assigned_to").children("img").attr("src") != "../assets/images/no_image.png"){
+				if(mark_task.closest(".check_icon").siblings(".task_title").children("input").val().trim() != "" && mark_task.closest(".check_icon").siblings(".task_assigned_to").children("img").attr("src") != "../assets/asana/images/no_image.png"){
 					mark_task.removeClass("fa-check-circle-o").addClass("fa-check-circle");
 					mark_task.closest(".check_icon").siblings(".main_task_status").find(".main_task_status_select").selectpicker("val", 3)
-					
+
 					if(mark_task.closest("#sub_tasks_section").length == 1){
 						task_id = tasks.map(a => a.task_id).indexOf(parseInt($(mark_task).closest("#right_content").attr("data-main-task-id")));
 						var sub_task_id = tasks[task_id].sub_tasks.map(a => a.sub_task_id).indexOf(parseInt(mark_task.closest("li").attr("data-sub-task-id")));
@@ -120,7 +120,7 @@ $(document).ready(function(){
 						if(task_status.find("option:selected").val() == 3 && task_status.closest("#remaining_task_sort").length == 1){
 							$(task_status).selectpicker("destroy");
 							var main_task_pending = $(task_status).closest("li").clone();
-							$(task_status).closest("li").remove();	
+							$(task_status).closest("li").remove();
 							$("#done_task_sort").append($(task_status).closest("li").clone()).find(".main_task_status_select").selectpicker().selectpicker('val', 3);
 						}
 
@@ -130,7 +130,7 @@ $(document).ready(function(){
 					if(mark_task.closest("#product_backlog_sort") && task_status.find("option:selected").val() == 3 && task_status.closest("#product_backlog_sort").length == 1){
 						$(task_status).selectpicker("destroy");
 						var main_task_pending = $(task_status).closest("li").clone();
-						$(task_status).closest("li").remove();	
+						$(task_status).closest("li").remove();
 						$("#sprint_cycle_sort").prepend($(task_status).closest("li").clone()).find(".main_task_status_select").selectpicker().selectpicker('val', 3);
 						update_main_task_index(".main_sort");
 					}
@@ -150,7 +150,7 @@ $(document).ready(function(){
 						$(task_status).selectpicker("destroy");
 						var main_task_pending = $(task_status).closest("li").clone();
 
-						$(task_status).closest("li").remove();	
+						$(task_status).closest("li").remove();
 						$("#remaining_task_sort").append(main_task_pending);
 						$(main_task_pending).find(".main_task_status_select").selectpicker().selectpicker('val', 1);
 					}
@@ -204,7 +204,7 @@ $(document).ready(function(){
 		for (var i = 0; i < tasks.length; i++) {
 			if(tasks[i].task_id == assignee.closest(".header").find("input[name=task_id]").val()){
 				if( assignee.closest(".header").find("input[name=sub_task_id]").val() == ""){
-					tasks[i].main_assigned_person_image = "../assets/images/"+assignee.find("option:selected").attr("data-image-name")+".jpg";
+					tasks[i].main_assigned_person_image = "../assets/asana/images/"+assignee.find("option:selected").attr("data-image-name")+".jpg";
 					tasks[i].main_assigned_person_name = assignee.attr("data-assignee-name");
 					tasks[i].main_assigned_person_id = assignee.val();
 
@@ -213,7 +213,7 @@ $(document).ready(function(){
 				}
 				else{
 					var subtask_index = tasks[i].sub_tasks.map(a => a.sub_task_id).indexOf(parseInt(assignee.closest(".header").find("input[name=sub_task_id]").val()));
-					tasks[i].sub_tasks[subtask_index].main_assigned_to_img = "../assets/images/"+assignee.find("option:selected").attr("data-image-name")+".jpg";
+					tasks[i].sub_tasks[subtask_index].main_assigned_to_img = "../assets/asana/images/"+assignee.find("option:selected").attr("data-image-name")+".jpg";
 					tasks[i].sub_tasks[subtask_index].main_assigned_to_name = assignee.find("option:selected").text();
 					tasks[i].sub_tasks[subtask_index].main_assigned_to_id = parseInt(assignee.val());
 
@@ -234,7 +234,7 @@ $(document).ready(function(){
 		for (var i = 0; i < tasks.length; i++) {
 			if(tasks[i].task_id == assignee.closest(".header").find("input[name=task_id]").val()){
 				if( assignee.closest(".header").find("input[name=sub_task_id]").val() == ""){
-					tasks[i].main_assigned_person_image = "../assets/images/"+assignee.attr("data-assignee-image")+".jpg";
+					tasks[i].main_assigned_person_image = "../assets/asana/images/"+assignee.attr("data-assignee-image")+".jpg";
 					tasks[i].main_assigned_person_name = assignee.attr("data-assignee-name");
 					tasks[i].main_assigned_person_id = assignee.attr("data-assignee-id");
 
@@ -244,7 +244,7 @@ $(document).ready(function(){
 				}
 				else{
 					var subtask_index = tasks[i].sub_tasks.map(a => a.sub_task_id).indexOf(parseInt(assignee.closest(".header").find("input[name=sub_task_id]").val()));
-					tasks[i].sub_tasks[subtask_index].main_assigned_to_img = "../assets/images/"+assignee.attr("data-assignee-image")+".jpg";
+					tasks[i].sub_tasks[subtask_index].main_assigned_to_img = "../assets/asana/images/"+assignee.attr("data-assignee-image")+".jpg";
 					tasks[i].sub_tasks[subtask_index].main_assigned_to_name = assignee.attr("data-assignee-name");
 					tasks[i].sub_tasks[subtask_index].main_assigned_to_id = parseInt( assignee.attr("data-assignee-id"));
 
@@ -322,12 +322,12 @@ $(document).ready(function(){
 			"task_detail" : 2,
 			"subtask_estimated_points": 0,
 			"main_assigned_to_id" : 0,
-			"main_assigned_to_img" : "../assets/images/no_image.png",
+			"main_assigned_to_img" : "../assets/asana/images/no_image.png",
 			"main_assigned_to_name" : "",
 			"subtask_title" : "",
 			"sub_task_id" : id_generator,
 			"project_id" : 1,
-			"project_color" : "blue" 
+			"project_color" : "blue"
 		}
 
 		tasks[tasks.map(a => a.task_id).indexOf(parseInt(crud_add_subtask.closest("#right_content").attr("data-main-task-id")))].sub_tasks.push(json_data);
@@ -339,7 +339,7 @@ $(document).ready(function(){
 	});
 
 	$("body").on("click", "#add_project_assigned_to", function(){
-		var task_assigned = $(this); 
+		var task_assigned = $(this);
 		var task_id = parseInt(task_assigned.closest("#right_content").attr("data-main-task-id"));
 		var task = tasks.map(a => a.task_id).indexOf(task_id)
 		var append_project = "";
@@ -405,9 +405,9 @@ $(document).ready(function(){
 	});
 
 	$("body").on("click", ".project_tag_see_more, .main_project_tag", function(){
-		var project_tag = $(this); 
+		var project_tag = $(this);
 		var append_tags = "";
-		
+
 		$("#hidden_other_project ul").attr("data-task-id", project_tag.closest("#right_content").attr("data-main-task-id"));
 
 		for (var i = 0; i < tasks.length; i++) {
@@ -480,7 +480,7 @@ $(document).ready(function(){
 			tasks.splice(task, 1);
 			$("#right_content").addClass("hidden");
 			show_main_tasks();
-		} 
+		}
 	})
 
 	$("body").on("changed.bs.select", "#main_detail_project_tag", function(){
@@ -488,7 +488,7 @@ $(document).ready(function(){
 		var task_index = tasks.map(a => a.task_id).indexOf(parseInt(project_tag.closest("#right_content").attr("data-main-task-id")))
 		var sub_task_index = tasks[task_index].sub_tasks.map(a => a.project_id).indexOf(parseInt(project_tag.closest("li").attr("data-sub-task-id")));
 		var sub_task_id = tasks[task_index].sub_tasks.map(a => a.sub_task_id).indexOf(parseInt(project_tag.closest("li").attr('data-sub-task-id')));
-		
+
 		tasks[task_index].sub_tasks[sub_task_id].project_id = parseInt(project_tag.val());
 		tasks[task_index].sub_tasks[sub_task_id].project_color = project_tag.find("option:selected").attr("data-color-option");
 
@@ -499,8 +499,8 @@ $(document).ready(function(){
 		if(remaining_need_tag.length != 0){
 			for (var i = 0; i < remaining_need_tag.length; i++) {
 				tasks[task_index].sub_project_tag.push({
-					project_id: remaining_need_tag[i], 
-					project_name: project_tag.find("option:selected").attr("data-name-option"), 
+					project_id: remaining_need_tag[i],
+					project_name: project_tag.find("option:selected").attr("data-name-option"),
 					project_color: project_tag.find("option:selected").attr("data-color-option")
 				})
 			}
@@ -533,7 +533,7 @@ $(document).ready(function(){
 					$("#main_tasks li[data-task-id="+main_task_id+"] .task_assigned_to span").text($("#add_sub_task_details .person_assigned_to").not(".main_person_assigned").length);
 				}
 			}, 150)
-		} 
+		}
 	});
 
 	$("body").on("click", ".task_assigned_to .is_not_zero", function(){
@@ -555,7 +555,7 @@ $(document).ready(function(){
 			});
 
 			user_tag.popover("show");
-		}, 150)	
+		}, 150)
 	});
 
 	$("body").on("click", ".remove_project_tag", function(){
@@ -599,14 +599,14 @@ $(document).ready(function(){
 		var task_value = $(this).val();
 		var task_id = (task_status.closest("#right_content").length == 1) ? task_status.closest("#right_content").attr("data-main-task-id") : task_status.closest("li.active_main_task").attr("data-task-id");
 
-		if(task_status.closest(".main_task_status").siblings(".task_title").children("input").val().trim() != "" && task_status.closest(".main_task_status").siblings(".task_assigned_to").children("img").attr("src") != "../assets/images/no_image.png"){
+		if(task_status.closest(".main_task_status").siblings(".task_title").children("input").val().trim() != "" && task_status.closest(".main_task_status").siblings(".task_assigned_to").children("img").attr("src") != "../assets/asana/images/no_image.png"){
 			if(task_status.find("option:selected").val() == 2 && ($("#main_tasks li[data-task-id="+task_id+"]").closest("#sprint_cycle_sort").length == 1)){
 				$("#main_tasks li[data-task-id="+task_id+"]").find(".main_task_status_select").selectpicker("destroy");
 				$("#main_tasks li[data-task-id="+task_id+"]").find(".main_task_detail_select").selectpicker("destroy");
 
 				var main_task_pending = $("#main_tasks li[data-task-id="+task_id+"]").clone();
 				$(main_task_pending).find(".check_icon .fa-check-circle").removeClass("fa-check-circle").addClass("fa-check-circle-o");
-				$("#main_tasks li[data-task-id="+task_id+"]").remove();	
+				$("#main_tasks li[data-task-id="+task_id+"]").remove();
 				$("#product_backlog_sort").append(main_task_pending);
 
 				$(main_task_pending).addClass("unsortable");
@@ -616,10 +616,10 @@ $(document).ready(function(){
 			else if(task_status.find("option:selected").val() == 1 && $("#main_tasks li[data-task-id="+task_id+"]").closest("#product_backlog_sort").length == 1){
 				$("#main_tasks li[data-task-id="+task_id+"]").find(".main_task_status_select").selectpicker("destroy");
 				$("#main_tasks li[data-task-id="+task_id+"]").find(".main_task_detail_select").selectpicker("destroy");
-				
+
 				var main_task_pending = $("#main_tasks li[data-task-id="+task_id+"]").clone();
 				$(main_task_pending).find(".check_icon .fa-check-circle").removeClass("fa-check-circle").addClass("fa-check-circle-o");
-				$("#main_tasks li[data-task-id="+task_id+"]").remove();	
+				$("#main_tasks li[data-task-id="+task_id+"]").remove();
 				$("#sprint_cycle_sort").append(main_task_pending);
 
 				$(main_task_pending).removeClass("unsortable");
@@ -629,9 +629,9 @@ $(document).ready(function(){
 			else if(task_status.find("option:selected").val() == 3 && $("#main_tasks li[data-task-id="+task_id+"]").closest("#product_backlog_sort").length == 1){
 				$("#main_tasks li[data-task-id="+task_id+"]").find(".main_task_status_select").selectpicker("destroy");
 				$("#main_tasks li[data-task-id="+task_id+"]").find(".main_task_detail_select").selectpicker("destroy");
-				
+
 				var main_task_pending = $("#main_tasks li[data-task-id="+task_id+"]").clone();
-				$("#main_tasks li[data-task-id="+task_id+"]").remove();	
+				$("#main_tasks li[data-task-id="+task_id+"]").remove();
 				$("#sprint_cycle_sort").prepend(main_task_pending);
 
 				$(main_task_pending).removeClass("unsortable");
@@ -676,12 +676,12 @@ $(document).ready(function(){
 	$("body").on("changed.bs.select", "#sub_tasks_section .bootstrap-select .main_task_status_select", function(){
 		var task_status = $(this);
 
-		if(task_status.closest(".main_task_status").siblings(".task_title").children("input").val().trim() != "" && task_status.closest(".main_task_status").siblings(".task_assigned_to").children("img").attr("src") != "../assets/images/no_image.png"){
+		if(task_status.closest(".main_task_status").siblings(".task_title").children("input").val().trim() != "" && task_status.closest(".main_task_status").siblings(".task_assigned_to").children("img").attr("src") != "../assets/asana/images/no_image.png"){
 			if(task_status.find("option:selected").val() == 3 && task_status.closest("#remaining_task_sort").length == 1){
 				$(task_status).selectpicker("destroy");
 
 				var main_task_pending = $(task_status).closest("li").clone();
-				$(task_status).closest("li").remove();	
+				$(task_status).closest("li").remove();
 				$("#done_task_sort").append(main_task_pending);
 				$(main_task_pending).find(".main_task_status_select").selectpicker().selectpicker('val', 3);
 				main_task_pending.find(".check_icon").find(".mark_task.fa-check-circle-o").removeClass("fa-check-circle-o").addClass("fa-check-circle")
@@ -691,7 +691,7 @@ $(document).ready(function(){
 				$(task_status).selectpicker("destroy");
 				var main_task_pending = $(task_status).closest("li").clone();
 
-				$(task_status).closest("li").remove();	
+				$(task_status).closest("li").remove();
 				$("#remaining_task_sort").append(main_task_pending);
 				$(main_task_pending).find(".main_task_status_select").selectpicker().selectpicker('val', task_status.find("option:selected").val());
 				main_task_pending.find(".check_icon").find(".mark_task.fa-check-circle").removeClass("fa-check-circle").addClass("fa-check-circle-o")
@@ -743,7 +743,7 @@ $(document).ready(function(){
 
 			setTimeout(function() {
 				item.dialog('close');
-			}, 
+			},
 			3000);
 		},
 		position: {
@@ -767,7 +767,7 @@ $(document).ready(function(){
 					compiled_to_be_saved = [];
 					$( "#dialog" ).dialog( "open" );
 					clearInterval(countInterval)
-				} 
+				}
 			}, 1000);
 		}
 	}});
@@ -775,7 +775,7 @@ $(document).ready(function(){
 function set_users(){
 	var append_users = "";
 	for (var i = 0; i < users.length; i++) {
-		append_users += '<option value="'+users[i].value+'" data-image-name="'+users[i].image_name+'">'+users[i].name+'</option>';	
+		append_users += '<option value="'+users[i].value+'" data-image-name="'+users[i].image_name+'">'+users[i].name+'</option>';
 	}
 
 	return append_users;
@@ -791,10 +791,10 @@ function sorting_element(element){
             if(ui.item.hasClass("unsortable"))
               ui.sender.sortable("cancel");
         },
-		forcePlaceholderSize: true, 
+		forcePlaceholderSize: true,
 		start: function( e, ui ){
        		ui.item.data( 'start-pos', ui.item.index()+1);
-   		}, 
+   		},
    		update: function( e, ui ) {
    			update_main_task_index(connectwith);
 		}
@@ -806,7 +806,7 @@ function sorting_element(element){
 function update_main_task_index(connectwith){
 	if(connectwith == ".main_sort"){
 		$.each($('#main_tasks .main_sort'), function(index, val) {
-			var container = $(this); 
+			var container = $(this);
 
 			$.each(container.find('>li'), function(index_cont, val) {
 				$(this).find(".index_count").html(index_cont + 1)
@@ -815,7 +815,7 @@ function update_main_task_index(connectwith){
 	}
 	else{
 		$.each($('#sub_tasks_section .subtask_sort'), function(index, val) {
-			var container = $(this); 
+			var container = $(this);
 
 			$.each(container.find('>li'), function(index_cont, val) {
 				$(this).find(".index_count").html(index_cont + 1)
@@ -835,16 +835,16 @@ function show_main_tasks(project_id){
 		var json_data = tasks[i];
 
 		// if( (json_data.task_detail == 1 && json_data.main_project_tag[0].project_id == parseInt(project_id) || (json_data.sub_project_tag.map(a => a.project_id).indexOf(parseInt(project_id)) != -1)) ||
-		// 	(json_data.task_detail == 3 && json_data.main_project_tag[0].project_id == parseInt(project_id) || (json_data.sub_project_tag.map(a => a.project_id).indexOf(parseInt(project_id)) != -1)) 
+		// 	(json_data.task_detail == 3 && json_data.main_project_tag[0].project_id == parseInt(project_id) || (json_data.sub_project_tag.map(a => a.project_id).indexOf(parseInt(project_id)) != -1))
 		// ){
 
 		if( (json_data.task_detail == 1 && json_data.main_project_tag[0].project_id == parseInt(project_id)) ||
-			(json_data.task_detail == 3 && json_data.main_project_tag[0].project_id == parseInt(project_id)) 
+			(json_data.task_detail == 3 && json_data.main_project_tag[0].project_id == parseInt(project_id))
 		){
 			append_current_task += main_task_template(json_data);
 			console.log(json_data)
 
-			if(json_data.task_detail == 3 && json_data.main_project_tag[0].project_id == parseInt(project_id)) 
+			if(json_data.task_detail == 3 && json_data.main_project_tag[0].project_id == parseInt(project_id))
 				count_completed_task++;
 			else
 				count_remaining_task++;
@@ -906,15 +906,15 @@ function shuffle_word(paragraph){
 	                words = [],
 	                match = [],
 	                  reg = /\b([^\s]+)\b/gm;
-	 
+
 	while (!!(match = reg.exec(sentenceToShuffle))){
 	  words[words.length] = match[1];
 	}
-	 
+
 	while (!!words.length) {
 	  shuffledSentence += " "+ words.splice(~~(Math.random()*words.length),1);
 	}
-	 
+
 	return shuffledSentence.replace(/^\s+/, "");
 }
 
@@ -930,7 +930,7 @@ var main_project_tag_template = _.template('<% if(main_project_tag.length != 0){
 													<% break;} %>	\
 												<% } %>\
 											<% } %>');
-												
+
 var main_task_template = _.template('<li data-task-id="<%= task_id %>" class="<%= task_detail == 2 ? "unsortable" : "" %>">\
 								<form action="">\
 									<div class="task_container">\
@@ -1044,7 +1044,7 @@ var main_details_template = _.template('<div id="add_sub_task">\
 							</div>\
 							<% for(var i = 0; i < sub_task_assigned_person.length; i++) {  %>\
 								<div class="person_assigned_to">\
-									<img src="../assets/images/<%= sub_task_assigned_person[i].image_name %>.jpg" data-user-name="<%= sub_task_assigned_person[i].name %>" alt="">\
+									<img src="../assets/asana/images/<%= sub_task_assigned_person[i].image_name %>.jpg" data-user-name="<%= sub_task_assigned_person[i].name %>" alt="">\
 								</div>\
 							<% } %>	\
 							<div id="project_assigned_to">\

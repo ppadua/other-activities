@@ -3,7 +3,7 @@ $(document).ready(function(){
 		$(".popover").popover("destroy");
 	});
 });
-	
+
 var projects = [
 	{
 		"name" : "CD CRM",
@@ -110,20 +110,20 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			}
 		],
 		"sub_tasks" : [
@@ -133,12 +133,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 1,
-				"main_assigned_to_img" : "../assets/images/john.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/john.jpg",
 				"main_assigned_to_name" : "John Supsupin",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			}
 		]
 	},
@@ -151,30 +151,30 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			},
 			{
 				"project_id" : 3,
 				"project_name" : "CODE GENERATION",
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		],
 		"sub_tasks" : [
@@ -182,13 +182,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 110,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 3,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -196,12 +196,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -214,25 +214,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -240,13 +240,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -254,12 +254,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -272,25 +272,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -298,13 +298,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -312,12 +312,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -330,25 +330,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -356,13 +356,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -370,12 +370,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -388,25 +388,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -414,13 +414,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -428,12 +428,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -446,25 +446,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -472,13 +472,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -486,12 +486,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -504,25 +504,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -530,13 +530,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -544,12 +544,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -562,25 +562,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -588,13 +588,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -602,12 +602,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -620,25 +620,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -646,13 +646,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -660,12 +660,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -678,25 +678,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -704,13 +704,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -718,12 +718,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -736,25 +736,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -762,13 +762,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -776,12 +776,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -794,25 +794,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -820,13 +820,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -834,12 +834,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -852,25 +852,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -878,13 +878,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -892,12 +892,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -910,25 +910,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -936,13 +936,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -950,12 +950,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -968,25 +968,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -994,13 +994,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -1008,12 +1008,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -1026,25 +1026,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -1052,13 +1052,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -1066,12 +1066,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -1084,25 +1084,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -1110,13 +1110,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -1124,12 +1124,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -1142,25 +1142,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -1168,13 +1168,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -1182,12 +1182,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	},
@@ -1200,25 +1200,25 @@ var tasks = [
 		"task_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 		"task_description" : "test description here",
 		"main_assigned_person_id" :  1,
-		"main_assigned_person_image" : "../assets/images/john.jpg",
+		"main_assigned_person_image" : "../assets/asana/images/john.jpg",
 		"main_assigned_person_name" : "John Supsupin",
 		"main_project_tag" : [
 			{
 				"project_id" : 1,
 				"project_name" : "CD CRM",
-				"project_color" : "green" 
+				"project_color" : "green"
 			}
 		],
 		"sub_project_tag" : [
 			{
 				"project_id" : 2,
 				"project_name" : "CD WEBSITE",
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"project_id" : 4,
 				"project_name" : "FOCUS TRACKER",
-				"project_color" : "brown" 
+				"project_color" : "brown"
 			}
 		],
 		"sub_tasks" : [
@@ -1226,13 +1226,13 @@ var tasks = [
 				"is_checked" : 0,
 				"subtask_estimated_points" : 100,
 				"main_assigned_to_id" : 2,
-				"main_assigned_to_img" : "../assets/images/noah.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/noah.jpg",
 				"main_assigned_to_name" : "Noah Guillen",
 				"task_detail" : 2,
 				"subtask_title" : "Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 1,
 				"project_id" : 2,
-				"project_color" : "blue" 
+				"project_color" : "blue"
 			},
 			{
 				"is_done" : 0,
@@ -1240,12 +1240,12 @@ var tasks = [
 				"task_detail" : 1,
 				"subtask_estimated_points": 50,
 				"main_assigned_to_id" : 3,
-				"main_assigned_to_img" : "../assets/images/mark.jpg",
+				"main_assigned_to_img" : "../assets/asana/images/mark.jpg",
 				"main_assigned_to_name" : "Mark Guillen",
 				"subtask_title" : "test Add two other paragraphs using proper html syntax. Add whatever text you would like.",
 				"sub_task_id" : 2,
 				"project_id" : 4,
-				"project_color" : "pink" 
+				"project_color" : "pink"
 			}
 		]
 	}
