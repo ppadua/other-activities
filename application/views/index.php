@@ -11,6 +11,7 @@
 	<ul>
 		<li><a href="/asana">Asana</a></li>
 		<li><a href="/survey">Survey</a></li>
+		<li><a href="/textinput">Text Input</a></li>
 	</ul>
 </body>
 </html>

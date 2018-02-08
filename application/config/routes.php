@@ -40,6 +40,7 @@
 
 $route['default_controller'] = "welcome";
 $route['asana'] = "welcome/asana";
+$route['textinput'] = "welcome/textinput";
 $route['survey'] = "welcome/survey";
 $route['404_override'] = '';
 

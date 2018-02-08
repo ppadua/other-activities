@@ -13,6 +13,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('survey');
 	}
+	public function textinput()
+	{
+		$this->load->view('textinput');
+	}
 }
 
 /* End of file welcome.php */
