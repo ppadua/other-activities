@@ -1,6 +1,10 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(/assets/textinput/css/fonts/Roboto-Regular.ttf);
+}
 * {
   padding: 0px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: myFirstFont;
 }
 #wrapper section {
   padding: 38px 0px 0px 3%;
@@ -114,6 +118,112 @@
 #wrapper section#haruki .haruki_input:focus + .haruki_label::after,
 #wrapper section#haruki .haruki_active .haruki_label::after {
   transform: translate3d(0, 8px, 0);
+}
+#wrapper section#madoka {
+  background-color: #2f3238;
+}
+#wrapper section#madoka .madoka_content {
+  font-size: 150%;
+  position: relative;
+  display: inline-block;
+  width: 330px;
+  vertical-align: top;
+  margin-right: 80px;
+}
+#wrapper section#madoka .madoka_input {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border-radius: 0;
+  background: #f0f0f0;
+  font-weight: bold;
+  width: 92%;
+  background: transparent;
+  border: none;
+  color: #7A7593;
+  padding: 10px 36px;
+  font-size: 25px;
+  outline: none;
+}
+#wrapper section#madoka .madoka_label {
+  display: inline-block;
+  float: right;
+  color: #6a7989;
+  font-weight: bold;
+  position: absolute;
+  color: #7A7593;
+  cursor: text;
+  top: 14px;
+}
+#wrapper section#madoka .madoka_span {
+  position: relative;
+  display: block;
+  width: 100%;
+  transform-origin: 0% 50%;
+  transition: transform 0.3s;
+}
+#wrapper section#madoka .draw {
+  background: none;
+  border: 0;
+  box-sizing: border-box;
+  margin: 1em;
+  padding: 1em 2em;
+  box-shadow: inset 1px -5px 0px -2px #7a7593;
+  color: #7a7593;
+  font-size: inherit;
+  font-weight: 700;
+  position: absolute;
+  vertical-align: middle;
+  outline: none;
+  left: -50px;
+  bottom: -25px;
+  width: 350px;
+}
+#wrapper section#madoka .draw:before,
+#wrapper section#madoka .draw:after {
+  box-sizing: inherit;
+  content: "";
+  position: absolute;
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+  right: 0;
+}
+#wrapper section#madoka .draw:before {
+  top: 0;
+}
+#wrapper section#madoka .draw:after {
+  bottom: 0;
+}
+#wrapper section#madoka .draw:focus {
+  border: none !important;
+  color: #7a7593;
+}
+#wrapper section#madoka .draw:focus:after {
+  width: 100% ;
+  height: 100% ;
+  border-right-color: #7a7593 ;
+  transition: height 0.2s ease-out 0.2s;
+}
+#wrapper section#madoka .draw:focus:before {
+  width: 100% ;
+  height: 100% ;
+  border-top-color: #7a7593  ;
+  border-left-color: #7a7593 ;
+  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
+}
+#wrapper section#madoka .button_active {
+  width: 106% ;
+  height: 48px ;
+  border-right: 2px solid #7a7593 !important;
+  border-top: 2px solid  #7a7593 !important;
+  border-left: 2px solid #7a7593 !important;
+}
+#wrapper section#madoka .input__field:focus + .input__field .madoka_span,
+#wrapper section#madoka .madoka_active .madoka_span {
+  transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
 }
 #wrapper section#juro {
   background-color: #2fa8ec;

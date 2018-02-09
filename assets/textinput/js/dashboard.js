@@ -65,6 +65,25 @@ $(document).ready(function(){
 		})
 	});
 
+	$(".draw").click(function(){
+		var draw = $(this);
+		
+		setTimeout(function(){
+			$(draw).siblings(".madoka_input").focus();
+			$(draw).addClass("button_active");
+			$(draw).closest(".madoka_content").addClass("madoka_active");
+		}, 1000)
+
+	})
+	$("body").on("blur", "#madoka .madoka_content", function(){
+		$("#madoka .button_active").each(function(){
+			if($(this).siblings(".madoka_input").val().trim() == ""){
+				$(this).removeClass("button_active");
+				$(this).closest(".madoka_content").removeClass("madoka_active");
+			}
+		})
+	})
+
 });
 
 function move(elem, type, width_length, color) {

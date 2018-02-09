@@ -53,6 +53,30 @@
 				</div>
 			</div>
 		</section>		
+		<section id="madoka">
+		  	<h3>Madoka</h3>
+			<div class="madoka_content">
+			    <input class="madoka_input" type="text" id="input-31" />
+			    <label class="madoka_label" for="input-31">
+		      		<span class="madoka_span">Frequency</span>
+			    </label>
+			   	<button class="draw"></button>
+			</div>
+			<div class="madoka_content">
+			    <input class="madoka_input" type="text" id="input-32" />
+			    <label class="madoka_label" for="input-32">
+		      		<span class="madoka_span">Weight</span>
+			    </label>
+			   	<button class="draw"></button>
+			</div>
+			<div class="madoka_content">
+			    <input class="madoka_input" type="text" id="input-33" />
+			    <label class="madoka_label" for="input-33">
+		      		<span class="madoka_span">Strength</span>
+			    </label>
+			   	<button class="draw"></button>
+			</div>
+		</section>
 		<section id="haruki">
 			<h3>Haruki</h3>
 			<div class="haruki_content" >
@@ -72,21 +96,15 @@
 			<h3>Juro</h3>
 			<div class="juro_content">
 				<input class="juro_input" type="text" id="juro_fname">
-				<label class="juro_label" for="juro_fname">
-					<span class="juro_span">First Name</span>
-				</label>
+				<label class="juro_label" for="juro_fname"><span class="juro_span">First Name</span></label>
 			</div>
 			<div class="input input--juro juro_content">
 				<input class="juro_input" type="text" id="juro_lname">
-				<label class="juro_label" for="juro_lname">
-					<span class="juro_span">Last Name</span>
-				</label>
+				<label class="juro_label" for="juro_lname"><span class="juro_span">Last Name</span></label>
 			</div>
 			<div class="input input--juro juro_content">
 				<input class="juro_input" type="text" id="juro_mname">
-				<label class="juro_label" for="juro_mname">
-					<span class="juro_span">Maiden Name</span>
-				</label>
+				<label class="juro_label" for="juro_mname"><span class="juro_span">Maiden Name</span></label>
 			</div>
 		</section>
 	</div>
