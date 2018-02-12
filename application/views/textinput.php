@@ -83,7 +83,7 @@
 				<label class="juro_label" for="juro_mname"><span class="juro_span">Maiden Name</span></label>
 			</div>
 		</section>
-		<section id="madoka"  class="content bgcolor-4">
+		<section id="madoka">
 			<?php if(isset($test)){ ?>
 		  	<h3>Madoka</h3>
 			<div class="madoka_content">
@@ -109,7 +109,7 @@
 			</div>
 			<?php } ?>
 
-			 <h3>Madoka</h3>
+			<h3>Madoka</h3>
 			<div class="madoka_content">
 				<input class="madoka_input" type="text" id="madoka_frequency" />
 				<label class="madoka_label" for="madoka_frequency">
