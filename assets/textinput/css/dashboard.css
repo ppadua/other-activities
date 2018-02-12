@@ -3,8 +3,130 @@
   src: url(/assets/textinput/css/fonts/Roboto-Regular.ttf);
 }
 * {
+  margin: 0px;
   padding: 0px;
   font-family: myFirstFont;
+}
+#wrapper {
+  /*section#madoka{
+		background-color: #2f3238;
+			
+		.madoka_content {
+			font-size: 150%;
+			position: relative;
+			display: inline-block;
+			width: 330px;
+			vertical-align: top;
+			margin-right: 80px;
+		}
+
+		.madoka_input {
+			position: relative;
+			display: block;
+			float: right;
+			font-weight: bold;
+			width: 92%;
+		    background: transparent;
+		    border: none;
+		    color: #7A7593;
+		    padding: 10px 36px;
+		    font-size: 25px;
+		    outline: none;
+		}
+
+		.madoka_label {
+			display: inline-block;
+			float: right;
+			color: #6a7989;
+			font-weight: bold;
+			position: absolute;
+			color: #7A7593;
+			cursor: text;
+			top: 14px;
+		}
+
+		.madoka_span {
+			position: relative;
+			display: block;
+			width: 100%;
+			transform-origin: 0% 50%;
+			transition: transform 0.3s;
+		}
+
+		.draw {
+			background: none;
+			border: 0;
+			box-sizing: border-box;
+			margin: 1em;
+			padding: 1em 2em;
+			box-shadow: inset 1px -5px 0px -2px #7a7593;
+			color: #7a7593;
+			font-size: inherit;
+			font-weight: 700;
+			position: absolute;
+			vertical-align: middle;
+			outline: none;
+			left: -50px;
+			bottom: -25px;
+			width: 350px;
+		}
+
+		.draw:before, .draw:after {
+			box-sizing: inherit;
+			content: "";
+			position: absolute;
+			border: 2px solid transparent;
+			width: 0;
+			height: 0;
+			right: 0;
+		}
+
+		.draw:before {
+			top: 0;
+		}
+
+		.draw:after {
+			bottom: 0;
+		}
+
+		.draw:focus {
+			border: none !important;
+			color: #7a7593;
+		}
+
+		.draw:focus:after{
+			width: 100% ;
+			height: 100% ;
+			border-right-color:  #7a7593 ;
+			transition: 
+				height 0.20s ease-out 0.20s;
+		}
+
+		.draw:focus:before{
+			width: 100% ; 
+			height: 100% ;
+			border-top-color: #7a7593  ;
+			border-left-color:#7a7593 ;
+			transition: 
+				border-color 0s ease-out 0.5s, 
+				width 0.25s ease-out 0.5s, 
+				height 0.25s ease-out 0.75s;
+		}
+
+		.button_active{
+			width: 106% ; 
+			height: 48px ;
+			border-right:  2px solid #7a7593 !important;
+			border-top: 2px solid  #7a7593 !important;
+			border-left: 2px solid #7a7593 !important;
+		}
+
+
+		.input__field:focus + .input__field .madoka_span,
+		.madoka_active .madoka_span {
+			transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
+		}
+	}*/
 }
 #wrapper section {
   padding: 38px 0px 0px 3%;
@@ -19,6 +141,7 @@
 }
 #wrapper section#hideo {
   background-color: #f9f7f6;
+  font-size: 150%;
 }
 #wrapper section#hideo .hideo_content {
   display: inline-block;
@@ -39,10 +162,9 @@
   line-height: 75px;
 }
 #wrapper section#hideo .hideo_content .hideo_label .hideo_span .hideo_icon {
-  color: #fff;
-  font-size: 150%;
+  color: white;
   transform: scale3d(1, 1, 1);
-  transform-origin: 0% 50%;
+  transform-origin: 50% 50%;
   transition: transform 0.3s;
 }
 #wrapper section#hideo .hideo_content .hideo_input {
@@ -54,12 +176,13 @@
   font-weight: bold;
   color: #aaa;
   width: 72%;
+  padding-left: 15px;
 }
 #wrapper section#hideo .hideo_active {
-  width: 55px !important;
+  width: 57px !important;
 }
 #wrapper section#hideo .hideo_active .hideo_span .hideo_icon {
-  transform: scale3d(0.8, 0.8, 1) !important;
+  transform: scale3d(0.6, 0.6, 1) !important;
 }
 #wrapper section#haruki {
   background-color: #f0efee;
@@ -119,162 +242,69 @@
 #wrapper section#haruki .haruki_active .haruki_label::after {
   transform: translate3d(0, 8px, 0);
 }
-#wrapper section#madoka {
-  background-color: #2f3238;
-}
-#wrapper section#madoka .madoka_content {
-  font-size: 150%;
-  position: relative;
-  display: inline-block;
-  width: 330px;
-  vertical-align: top;
-  margin-right: 80px;
-}
-#wrapper section#madoka .madoka_input {
-  position: relative;
-  display: block;
-  float: right;
-  padding: 0.8em;
-  width: 60%;
-  border-radius: 0;
-  background: #f0f0f0;
-  font-weight: bold;
-  width: 92%;
-  background: transparent;
-  border: none;
-  color: #7A7593;
-  padding: 10px 36px;
-  font-size: 25px;
-  outline: none;
-}
-#wrapper section#madoka .madoka_label {
-  display: inline-block;
-  float: right;
-  color: #6a7989;
-  font-weight: bold;
-  position: absolute;
-  color: #7A7593;
-  cursor: text;
-  top: 14px;
-}
-#wrapper section#madoka .madoka_span {
-  position: relative;
-  display: block;
-  width: 100%;
-  transform-origin: 0% 50%;
-  transition: transform 0.3s;
-}
-#wrapper section#madoka .draw {
-  background: none;
-  border: 0;
-  box-sizing: border-box;
-  margin: 1em;
-  padding: 1em 2em;
-  box-shadow: inset 1px -5px 0px -2px #7a7593;
-  color: #7a7593;
-  font-size: inherit;
-  font-weight: 700;
-  position: absolute;
-  vertical-align: middle;
-  outline: none;
-  left: -50px;
-  bottom: -25px;
-  width: 350px;
-}
-#wrapper section#madoka .draw:before,
-#wrapper section#madoka .draw:after {
-  box-sizing: inherit;
-  content: "";
-  position: absolute;
-  border: 2px solid transparent;
-  width: 0;
-  height: 0;
-  right: 0;
-}
-#wrapper section#madoka .draw:before {
-  top: 0;
-}
-#wrapper section#madoka .draw:after {
-  bottom: 0;
-}
-#wrapper section#madoka .draw:focus {
-  border: none !important;
-  color: #7a7593;
-}
-#wrapper section#madoka .draw:focus:after {
-  width: 100% ;
-  height: 100% ;
-  border-right-color: #7a7593 ;
-  transition: height 0.2s ease-out 0.2s;
-}
-#wrapper section#madoka .draw:focus:before {
-  width: 100% ;
-  height: 100% ;
-  border-top-color: #7a7593  ;
-  border-left-color: #7a7593 ;
-  transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-}
-#wrapper section#madoka .button_active {
-  width: 106% ;
-  height: 48px ;
-  border-right: 2px solid #7a7593 !important;
-  border-top: 2px solid  #7a7593 !important;
-  border-left: 2px solid #7a7593 !important;
-}
-#wrapper section#madoka .input__field:focus + .input__field .madoka_span,
-#wrapper section#madoka .madoka_active .madoka_span {
-  transform: scale3d(0.81, 0.81, 1) translate3d(0, 4em, 0);
-}
 #wrapper section#juro {
+  font-size: 150%;
   background-color: #2fa8ec;
+}
+#wrapper section#juro *:after,
+#wrapper section#juro *:before {
+  box-sizing: border-box;
 }
 #wrapper section#juro .juro_content {
   position: relative;
+  z-index: 1;
   display: inline-block;
+  max-width: 350px;
   margin: 16px;
-  width: 350px;
+  width: 100%;
   vertical-align: top;
+  overflow: hidden;
+  background-color: white;
 }
-#wrapper section#juro .juro_content .juro_input {
+#wrapper section#juro .juro_input {
+  display: block;
+  width: 60%;
   border: none;
   font-weight: bold;
-  outline: none;
   position: absolute;
-  padding: 45px 8px 16px 20px;
-  width: 91%;
+  padding: 38px 16px 0;
+  width: 100%;
+  background: transparent;
   color: #1784cd;
-  font-size: 20px;
+  font-size: 22px;
+  outline: none;
 }
-#wrapper section#juro .juro_content .juro_label {
+#wrapper section#juro .juro_label {
   color: #6a7989;
   font-weight: bold;
+  font-size: 70.25%;
+  user-select: none;
+  padding: 0;
 }
-#wrapper section#juro .juro_content .juro_label .juro_span {
-  position: relative;
+#wrapper section#juro .juro_span {
   display: block;
   padding: 32px 16px;
+  transform-origin: 0% 50%;
   transition: transform 0.3s, color 0.3s;
-  font-size: 18px;
 }
-#wrapper section#juro .juro_content .juro_label::before {
-  content: '';
+#wrapper section#juro .juro_label::before {
+  content: "";
   position: absolute;
-  width: 96%;
-  height: 45px;
-  border: 1px solid transparent;
-  -webkit-transition: border-width 0.3s, border-color 0.3s;
+  width: 100%;
+  height: 100%;
+  border: 0px solid transparent;
   transition: border-width 0.3s, border-color 0.3s;
 }
 #wrapper section#juro .juro_input:focus + .juro_label::before,
 #wrapper section#juro .juro_active .juro_label::before {
-  border-width: 10px;
+  border-width: 8px;
   border-color: #1784cd;
   border-top-width: 32px;
 }
 #wrapper section#juro .juro_input:focus + .juro_label .juro_span,
 #wrapper section#juro .juro_active .juro_label .juro_span {
   color: #fff;
-  transform: translate3d(-40px, -24px, 0) scale3d(0.75, 0.75, 1) translateZ(1px);
+  transform: translate3d(0, -24px, 0) scale3d(0.75, 0.75, 1);
 }
 #wrapper section#hoshi .hoshi_bar {
   width: 100%;
@@ -293,7 +323,7 @@
 #wrapper section#hoshi .hoshi_content {
   position: relative;
   display: inline-block;
-  margin: 1em;
+  margin: 16px;
   max-width: 350px;
   width: 100%;
   vertical-align: top;
@@ -302,10 +332,8 @@
   float: right;
   border: none;
   border-radius: 0;
-  background: #f0f0f0;
-  color: #aaa;
   font-weight: bold;
-  margin-top: 1em;
+  margin-top: 16px;
   padding: 13px 2px;
   width: 100%;
   background: transparent;
@@ -343,7 +371,81 @@
     transform: translate3d(0, -40%, 0);
   }
 }
+#wrapper section#madoka {
+  font-size: 150%;
+  background: #2f3238;
+}
+#wrapper section#madoka *,
+#wrapper section#madoka *:after,
+#wrapper section#madoka *:before {
+  box-sizing: border-box;
+}
+#wrapper section#madoka .madoka_content {
+  position: relative;
+  display: inline-block;
+  max-width: 350px;
+  width: 100%;
+  margin: 17px;
+}
+#wrapper section#madoka .madoka_content .madoka_input {
+  float: right;
+  padding: 18px;
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  background: transparent;
+  color: #7A7593;
+  outline: none;
+}
+#wrapper section#madoka .madoka_content .madoka_label {
+  display: inline-block;
+  float: right;
+  padding: 0 16px;
+  font-weight: bold;
+  font-size: 70.25%;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #7A7593;
+  text-align: left;
+  cursor: text;
+}
+#wrapper section#madoka .madoka_content .madoka_span {
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  width: 100%;
+  transform-origin: 0% 50%;
+  transition: transform 0.3s;
+}
+#wrapper section#madoka .madoka_content .madoka_graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+  transform: scale3d(1, -1, 1);
+  transition: stroke-dashoffset 0.3s;
+  pointer-events: none;
+  stroke: #7A7593;
+  stroke-width: 4px;
+  stroke-dasharray: 962;
+  stroke-dashoffset: 558;
+}
+#wrapper section#madoka .madoka_input:focus + .madoka_label,
+#wrapper section#madoka .madoka_active .madoka_label {
+  cursor: default;
+  pointer-events: none;
+}
+#wrapper section#madoka .madoka_input:focus + .madoka_label .madoka_graphic,
+#wrapper section#madoka .madoka_active .madoka_graphic {
+  stroke-dashoffset: 0;
+}
+#wrapper section#madoka .madoka_input:focus + .madoka_label .madoka_span,
+#wrapper section#madoka .madoka_active .madoka_span {
+  transform: scale3d(0.81, 0.81, 1) translate3d(0, 64px, 0);
+}
 .hidden {
   display: none;
 }
-/* Hideo */

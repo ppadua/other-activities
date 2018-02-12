@@ -46,7 +46,7 @@ $(document).ready(function(){
 		$(this).addClass("hoshi_active")
 	})
 	.on("blur", "#hoshi .hoshi_content", function(){
-		$("#hoshi .hoshi_content.hoshi_active").each(function(){
+		$("#hoshi .hoshi_active").each(function(){
 			if($(this).find(".hoshi_input").val().trim() == ""){
 				$(this).removeClass("hoshi_active");
 				switch ($(this).attr("data-color")) {
@@ -60,24 +60,17 @@ $(document).ready(function(){
 						selected_color = "#ff5500"
 						break;
 				}
+
 				move($(this).find(".hoshi_bar"), "sub", 100, selected_color);
 			}
 		})
 	});
-
-	$(".draw").click(function(){
-		var draw = $(this);
-		
-		setTimeout(function(){
-			$(draw).siblings(".madoka_input").focus();
-			$(draw).addClass("button_active");
-			$(draw).closest(".madoka_content").addClass("madoka_active");
-		}, 1000)
-
+	$("body").on("click", ".madoka_content", function(){
+		$(this).closest(".madoka_content").addClass("madoka_active");
 	})
 	$("body").on("blur", "#madoka .madoka_content", function(){
-		$("#madoka .button_active").each(function(){
-			if($(this).siblings(".madoka_input").val().trim() == ""){
+		$("#madoka .madoka_active").each(function(){
+			if($(this).find(".madoka_input").val().trim() == ""){
 				$(this).removeClass("button_active");
 				$(this).closest(".madoka_content").removeClass("madoka_active");
 			}
