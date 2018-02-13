@@ -1,18 +1,18 @@
-section#hoshi .hoshi_bar {
+.hoshi_bar {
   width: 100%;
   height: 4px;
   background-color: silver;
   position: absolute;
   margin-top: 64px;
 }
-section#hoshi .hidden_bar {
+.hidden_bar {
   width: 100%;
   height: 4px;
   background-color: silver;
   position: absolute;
   margin-top: 64px;
 }
-section#hoshi .hoshi_content {
+.hoshi_content {
   position: relative;
   display: inline-block;
   margin: 16px;
@@ -20,7 +20,7 @@ section#hoshi .hoshi_content {
   width: 100%;
   vertical-align: top;
 }
-section#hoshi .hoshi_input {
+.hoshi_input {
   float: right;
   border: none;
   border-radius: 0;
@@ -33,20 +33,20 @@ section#hoshi .hoshi_input {
   font-size: 20px;
   outline: none;
 }
-section#hoshi .hoshi_label {
+.hoshi_label {
   color: #6a7989;
   font-weight: bold;
   font-size: 18px;
   position: absolute;
   cursor: auto;
 }
-section#hoshi .hoshi_span {
+.hoshi_span {
   display: block;
   padding: 25px 0;
   width: 100%;
 }
-section#hoshi .hoshi_input:focus + .hoshi_label .hoshi_span,
-section#hoshi .hoshi_active .hoshi_span {
+.hoshi_input:focus + .hoshi_label .hoshi_span,
+.hoshi_active .hoshi_span {
   animation: textToogle 0.3s forwards;
 }
 @keyframes textToogle {

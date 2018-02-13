@@ -1,22 +1,28 @@
 (function ( $ ) {
 	$.fn.juro = function( options ) {
 		var input = this;
-		var title =  input.attr("id")
-		var section = plugin_section(this, title, options.content)
+		input.wrap('<div class="juro_content">')
+		input.closest(".juro_content").append(section_template())
+		input.remove()
 
-		for(var i = 0; i < options.content.length; i++){
-			input.closest("section#"+input.attr("id")).append(section_template(i, options.content[i], title))
-		}
-		
-		input.remove();
+		$("body").on("click", ".juro_content", function(){
+			$(this).addClass("juro_active")
+		})
+		.on("blur", ".juro_content", function(){
+			$(".juro_content").each(function(){
+				if($(this).find(".juro_input").val().trim() == "")
+					$(this).removeClass("juro_active")
+			})
+		});
 	};
 
-	function section_template(index, data, title){
-		var template_id = title +"_"+ index;
+	function section_template(title){
+		var template_id = "juro_"+ Math.floor((Math.random() * 10000) + 1);
+		var label = ["First Name", "Last Name", "Maiden Name"];
 
-		return '<div class="'+title+'_content" > \
-					<input type="text" id="'+template_id+'" class="'+title+'_input"> \
-					<label for="'+template_id+'" class="'+title+'_label"><span class="'+title+'_span">'+data.label+'</span></label> \
+		return '<div class="juro_content" > \
+					<input type="text" id="'+template_id+'" class="juro_input"> \
+					<label for="'+template_id+'" class="juro_label"><span class="juro_span">'+label[Math.floor((Math.random() * 2) + 0)]+'</span></label> \
 				</div>'
 	};
 }( jQuery ));

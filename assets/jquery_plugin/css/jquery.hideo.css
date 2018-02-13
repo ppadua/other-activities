@@ -1,13 +1,12 @@
-section#hideo {
-  background-color: #f9f7f6;
-  font-size: 150%;
-}
-section#hideo .hideo_content {
+.hideo_content {
+  display: none;
   display: inline-block;
   padding: 25px;
   width: 350px;
+  font-size: 150%;
+  vertical-align: top;
 }
-section#hideo .hideo_content .hideo_label {
+.hideo_content .hideo_label {
   height: 73px;
   width: 70px;
   background-color: #899dda;
@@ -15,18 +14,18 @@ section#hideo .hideo_content .hideo_label {
   transition: width .3s;
   text-align: center;
 }
-section#hideo .hideo_content .hideo_label .hideo_span {
+.hideo_content .hideo_label .hideo_span {
   text-align: center;
   margin-top: 10%;
   line-height: 75px;
 }
-section#hideo .hideo_content .hideo_label .hideo_span .hideo_icon {
+.hideo_content .hideo_label .hideo_span .hideo_icon {
   color: white;
   transform: scale3d(1, 1, 1);
   transform-origin: 50% 50%;
   transition: transform 0.3s;
 }
-section#hideo .hideo_content .hideo_input {
+.hideo_content .hideo_input {
   vertical-align: top;
   height: 70px;
   border: none;
@@ -37,9 +36,9 @@ section#hideo .hideo_content .hideo_input {
   width: 72%;
   padding-left: 15px;
 }
-section#hideo .hideo_active {
+.hideo_active {
   width: 57px !important;
 }
-section#hideo .hideo_active .hideo_span .hideo_icon {
+.hideo_active .hideo_span .hideo_icon {
   transform: scale3d(0.6, 0.6, 1) !important;
 }
