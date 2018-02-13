@@ -1,0 +1,75 @@
+section#madoka {
+  font-size: 150%;
+  background: #2f3238;
+}
+section#madoka *,
+section#madoka *:after,
+section#madoka *:before {
+  box-sizing: border-box;
+}
+section#madoka .madoka_content {
+  position: relative;
+  display: inline-block;
+  max-width: 350px;
+  width: 100%;
+  margin: 17px;
+}
+section#madoka .madoka_content .madoka_input {
+  float: right;
+  padding: 18px;
+  border: none;
+  font-weight: bold;
+  font-size: 25px;
+  width: 100%;
+  background: transparent;
+  color: #7A7593;
+  outline: none;
+}
+section#madoka .madoka_content .madoka_label {
+  display: inline-block;
+  float: right;
+  padding: 0 16px;
+  font-weight: bold;
+  font-size: 70.25%;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  color: #7A7593;
+  text-align: left;
+  cursor: text;
+}
+section#madoka .madoka_content .madoka_span {
+  position: relative;
+  display: block;
+  padding: 25px 0;
+  width: 100%;
+  transform-origin: 0% 50%;
+  transition: transform 0.3s;
+}
+section#madoka .madoka_content .madoka_graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+  transform: scale3d(1, -1, 1);
+  transition: stroke-dashoffset 0.3s;
+  pointer-events: none;
+  stroke: #7A7593;
+  stroke-width: 4px;
+  stroke-dasharray: 962;
+  stroke-dashoffset: 558;
+}
+section#madoka .madoka_input:focus + .madoka_label,
+section#madoka .madoka_active .madoka_label {
+  cursor: default;
+  pointer-events: none;
+}
+section#madoka .madoka_input:focus + .madoka_label .madoka_graphic,
+section#madoka .madoka_active .madoka_graphic {
+  stroke-dashoffset: 0;
+}
+section#madoka .madoka_input:focus + .madoka_label .madoka_span,
+section#madoka .madoka_active .madoka_span {
+  transform: scale3d(0.81, 0.81, 1) translate3d(0, 64px, 0);
+}

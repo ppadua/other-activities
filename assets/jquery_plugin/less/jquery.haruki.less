@@ -1,0 +1,67 @@
+section#haruki{
+	background-color: #f0efee;
+
+	.haruki_content {
+		width: 298px;
+	    position: relative;
+			margin-right: 50px;
+			display: inline-block;
+		padding: 25px;
+
+	    .haruki_input{
+			position: absolute;
+			float: right;
+			width: 100%;
+			color: #6a7989;
+			font-weight: bold;
+			margin-top: 17px;
+			height: 40px;
+			font-size: 40px;
+			border: none;
+			outline: none;
+			background-color: #f0efee;
+		}
+
+		.haruki_label {
+			position: absolute;
+			width: 100%;
+			cursor: auto;
+		}
+
+		.haruki_span{
+			transition: transform 0.3s;
+			position: relative;
+			display: block;
+			padding: 25px 0 25px 19px;
+			font-size: 18px;
+			color: #6a7989;
+			font-weight: bold;
+		}
+
+		.haruki_label::before,
+		.haruki_label::after {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 4px;
+			background: #6a7989;
+			transition: transform 0.3s;
+		}
+
+	}
+
+	.haruki_input:focus + .haruki_label .haruki_span,
+	.haruki_active .haruki_span {
+		transform: translate3d(0, -90%, 0);
+	}
+
+	.haruki_input:focus + .haruki_label::before,
+	.haruki_active .haruki_label::before {
+		transform: translate3d(0, -8px, 0);
+	}
+
+	.haruki_input:focus + .haruki_label::after,
+	.haruki_active .haruki_label::after {
+		transform: translate3d(0, 8px, 0);
+	}
+}

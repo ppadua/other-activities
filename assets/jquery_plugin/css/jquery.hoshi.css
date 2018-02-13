@@ -1,0 +1,65 @@
+section#hoshi .hoshi_bar {
+  width: 100%;
+  height: 4px;
+  background-color: silver;
+  position: absolute;
+  margin-top: 64px;
+}
+section#hoshi .hidden_bar {
+  width: 100%;
+  height: 4px;
+  background-color: silver;
+  position: absolute;
+  margin-top: 64px;
+}
+section#hoshi .hoshi_content {
+  position: relative;
+  display: inline-block;
+  margin: 16px;
+  max-width: 350px;
+  width: 100%;
+  vertical-align: top;
+}
+section#hoshi .hoshi_input {
+  float: right;
+  border: none;
+  border-radius: 0;
+  font-weight: bold;
+  margin-top: 16px;
+  padding: 13px 2px;
+  width: 100%;
+  background: transparent;
+  color: #595F6E;
+  font-size: 20px;
+  outline: none;
+}
+section#hoshi .hoshi_label {
+  color: #6a7989;
+  font-weight: bold;
+  font-size: 18px;
+  position: absolute;
+  cursor: auto;
+}
+section#hoshi .hoshi_span {
+  display: block;
+  padding: 25px 0;
+  width: 100%;
+}
+section#hoshi .hoshi_input:focus + .hoshi_label .hoshi_span,
+section#hoshi .hoshi_active .hoshi_span {
+  animation: textToogle 0.3s forwards;
+}
+@keyframes textToogle {
+  50% {
+    opacity: 0;
+    transform: translate3d(16px, 0, 0);
+  }
+  51% {
+    opacity: 0;
+    transform: translate3d(-16px, -40%, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, -40%, 0);
+  }
+}
