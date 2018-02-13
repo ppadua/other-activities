@@ -2,7 +2,7 @@
 	$.fn.hideo = function( options ) {
 		var input = this;
 		input.wrap('<div class="hideo_content">')
-		input.closest(".hideo_content").append(section_template())
+		input.closest(".hideo_content").append(section_template(input))
 		input.remove()
 
 		$("body").on("click", ".hideo_content", function(){
@@ -14,12 +14,13 @@
 		});
 	};
 
-	function section_template(){
+	function section_template(input){
 		var template_id = "hideo_"+ Math.floor((Math.random() * 10000) + 1);
 		var label = ["user", "envelope", "lock"];
 
-		return '<label for="'+template_id+'" class="hideo_label"><span class="hideo_span"><i class="fa fa-'+label[Math.floor((Math.random() * 2) + 0)]+' hideo_icon"></i></span></label>\
-				<input type="text" id="'+template_id+'" class="hideo_input">';
+		input.addClass("hideo_input")
+		input.attr("id", input.attr("id")+" "+template_id)
+		return '<label for="'+template_id+'" class="hideo_label"><span class="hideo_span"><i class="fa fa-user hideo_icon"></i></span></label>'+$(input)[0].outerHTML;
 	};
 
 }( jQuery ));
