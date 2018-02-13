@@ -15,8 +15,8 @@
 		var template_id = title +"_"+ index;
 
 		return '<div class="'+title+'_content" data-color="'+data.color+'">\
-					<input type="text" id="'+title+'_user" class="'+title+'_input">\
-					<label for="'+title+'_user" class="'+title+'_label"><span class="'+title+'_span">'+data.label+'</span></label>\
+					<input type="text" id="'+template_id+'" class="'+title+'_input">\
+					<label for="'+template_id+'" class="'+title+'_label"><span class="'+title+'_span">'+data.label+'</span></label>\
 					<div class="bar">\
 						<div class="hidden_bar"></div>\
 						<div class="'+title+'_bar"></div>\
