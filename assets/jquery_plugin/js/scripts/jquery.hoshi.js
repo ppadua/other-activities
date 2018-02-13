@@ -4,12 +4,12 @@
 		var selected_color = options != undefined && (options.color != undefined && options.color.trim() != "")? options.color: "#ff5500";
 
 		input.wrap('<div class="hoshi_content">')
-		input.closest(".hoshi_content").append(section_template(input))
+		input.closest(".hoshi_content").attr("data-color", selected_color).append(section_template(input))
 		input.remove()
 
 		$("body").on("click", ".hoshi_content", function(){
 			if(!$(this).hasClass("hoshi_active")){
-				move($(this).find(".hoshi_bar"), "add", 0, selected_color);
+				move($(this).find(".hoshi_bar"), "add", 0, $(this).attr("data-color"));
 			}
 		
 			$(this).addClass("hoshi_active");
@@ -18,7 +18,7 @@
 			$(".hoshi_content.hoshi_active").each(function(){
 				if($(this).find(".hoshi_input").val().trim() == ""){
 					$(this).removeClass("hoshi_active");
-					move($(this).find(".hoshi_bar"), "sub", 100, selected_color);
+					move($(this).find(".hoshi_bar"), "sub", 100, $(this).attr("data-color"));
 				}
 			})
 		});
@@ -39,6 +39,7 @@
 	};
 
 	function move(elem, type, width_length, color) {
+		console.log(color)
 		var width = width_length;
 		var id = setInterval(frame, 10);
 
