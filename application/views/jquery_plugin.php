@@ -22,7 +22,6 @@
 	<link rel="stylesheet" href="/assets/jquery_plugin/css/jquery.madoka.css?<?= time()?>">
 </head>
 <body>
-	<input type="text" name="" class="madokaw">
 	<input type="text" name="" id="hideo">
     <input type="text" name="" id="hoshi">
     <input type="text" name="" id="juro">
