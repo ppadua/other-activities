@@ -1,22 +1,17 @@
 (function ( $ ) {
-	var default_input;
-
 	$.fn.juro = function( options ) {
-		if(default_input == undefined)
-			default_input = this.clone();
+		var default_input = this;
+		var input = default_input.clone();
 
-		var input = this;
-
-		if(options != "destroy"){
+		if(options != "destroy" && default_input.closest(".juro_content").length == 0){
 			var template_id = "juro_"+ Math.floor((Math.random() * 10000) + 1);
-			var active_id = (input.attr("id") != undefined ? input.attr("id") :  template_id)
-			var placeholder = (input.attr("placeholder") != undefined ? input.attr("placeholder") :  "Juro")
+			var active_id = (input.attr("id") != undefined ? input.attr("id") :  template_id);
+			var placeholder = (input.attr("placeholder") != undefined ? input.attr("placeholder") :  "Juro");
 
-			input.addClass("juro_input")
-				 .attr("id", active_id)
-				 .wrap('<div class="juro_content">')
-				 .closest(".juro_content")
-				 .append(section_template(active_id, placeholder)).prepend(input)
+			default_input.wrap('<div class="juro_content">')
+						 .closest(".juro_content")
+						 .append(section_template(active_id, placeholder))
+						 .prepend(input.addClass("juro_input").attr("id", active_id))
 
 			$(".juro_content").click(function(){
 				$(this).addClass("juro_active")
@@ -27,9 +22,12 @@
 						$(this).removeClass("juro_active")
 				})
 			});
+
+			default_input.addClass("hidden");
 		}
-		else if(input.closest(".juro_content").length >= 1 && options == "destroy"){
-			input.closest(".juro_content").html(default_input)
+		else if(default_input.closest(".juro_content").length >= 1 && options == "destroy"){
+			$(default_input[1]).removeClass("hidden").siblings().remove().unwrap();
+			$(default_input[1]).unwrap();
 		}
 
 

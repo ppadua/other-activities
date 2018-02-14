@@ -21,7 +21,7 @@ $(document).ready(function(){
 		}
 	})
 	// console.log($( "#hideo" ).hideo())
-    $( "#hideo" ).hideo("test").attr("name", "test");
+    $( "#hideo" ).hideo();
     $( "#harukie" ).haruki();
     $( "#hoshi" ).hoshi();
     $( "#juro" ).juro();

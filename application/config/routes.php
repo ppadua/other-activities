@@ -41,6 +41,7 @@
 $route['default_controller'] = "welcome";
 $route['asana'] = "welcome/asana";
 $route['textinput'] = "welcome/textinput";
+$route['textinput2'] = "welcome/textinput2";
 $route['survey'] = "welcome/survey";
 $route['jquery_plugin'] = "welcome/jquery_plugin";
 $route['404_override'] = '';

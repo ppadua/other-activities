@@ -1,25 +1,21 @@
 (function ( $ ) {
-	var default_input;
-
 	$.fn.hoshi = function( options ) {
-		if(default_input == undefined)
-			default_input = this.clone();
+		var default_input = this;
+		var input = default_input.clone();
 
-		var input = this;
+		console.log(options)
+		console.log(input.closest(".hoshi_content").length)
 
-		if(options != "destroy"){
-			// var selected_color = options != undefined && (options.color != undefined && options.color.trim() != "")? options.color: "#ff5500";
-			var selected_color = (input.attr("data-color") != undefined) ? input.attr("data-color") : "#ff5500";
+		if(options != "destroy" && default_input.closest(".hoshi_content").length == 0){
+			var selected_color = (input.attr("data-color") != undefined && input.attr("data-color") != "") ? input.attr("data-color") : "#ff5500";
 			var template_id = "hideo_"+ Math.floor((Math.random() * 10000) + 1);
 			var active_id = (input.attr("id") != undefined ? input.attr("id") :  template_id)
 			var placeholder = (input.attr("placeholder") != undefined ? input.attr("placeholder") :  "Hoshi")
 
-			input.addClass("hoshi_input")
-			 	 .attr("data-color", selected_color)
-				 .attr("id", active_id)
-				 .wrap('<div class="hoshi_content">')
-				 .closest(".hoshi_content")
-				 .append(section_template(active_id, placeholder)).prepend(input)
+			default_input.wrap('<div class="hoshi_content">')
+						 .closest(".hoshi_content")
+						 .append(section_template(active_id, placeholder))
+						 .prepend(input.addClass("hoshi_input").attr("id", active_id).attr("data-color", selected_color))
 
 
 			$(".hoshi_content").click(function(){
@@ -38,9 +34,12 @@
 					}
 				})
 			});
+
+			default_input.addClass("hidden");
 		}
-		else if(input.closest(".hoshi_content").length >= 1 && options == "destroy"){
-			input.closest(".hoshi_content").html(default_input)
+		else if(default_input.closest(".hoshi_content").length >= 1 && options == "destroy"){
+			$(default_input[1]).removeClass("hidden").siblings().remove().unwrap();
+			$(default_input[1]).unwrap();
 		}
 
 		return input;

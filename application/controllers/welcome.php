@@ -22,6 +22,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('jquery_plugin');
 	}
+	public function textinput2()
+	{
+		$this->load->view('textinput2');
+	}
 }
 
 /* End of file welcome.php */
