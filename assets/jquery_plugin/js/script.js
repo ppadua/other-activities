@@ -20,8 +20,8 @@ $(document).ready(function(){
 			}
 		}
 	})
-
-    $( "#hideo" ).hideo();
+	// console.log($( "#hideo" ).hideo())
+    $( "#hideo" ).hideo("test").attr("name", "test");
     $( "#harukie" ).haruki();
     $( "#hoshi" ).hoshi();
     $( "#juro" ).juro();
