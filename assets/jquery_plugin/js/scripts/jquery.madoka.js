@@ -1,17 +1,16 @@
 (function ( $ ) {
 	$.fn.madoka = function( options ) {
 		var default_input = this;
-		var input = default_input.clone();
 
 		if(options != "destroy" && default_input.closest(".madoka_content").length == 0){
 			var template_id = "madoka_"+ Math.floor((Math.random() * 10000) + 1);
-			var active_id = (input.attr("id") != undefined ? input.attr("id") :  template_id);
-			var placeholder = (input.attr("placeholder") != undefined ? input.attr("placeholder") :  "Madoka");
+			var active_id = (default_input.attr("id") != undefined && default_input.attr("id") != "" ? default_input.attr("id") : template_id);
+			var placeholder = (default_input.attr("placeholder") != undefined ? default_input.attr("placeholder") :  "Madoka");
 
 			default_input.wrap('<div class="madoka_content">')
 						 .closest(".madoka_content")
 						 .append(section_template(active_id, placeholder))
-						 .prepend(input.addClass("madoka_input").attr("id", active_id))
+						 .prepend(default_input.addClass("madoka_input").attr("id", active_id))
 
 			$(".madoka_content").click(function(){
 				$(this).addClass("madoka_active")
@@ -22,15 +21,14 @@
 						$(this).removeClass("madoka_active")
 				})
 			});
-
-			default_input.addClass("hidden");
 		}
 		else if(default_input.closest(".madoka_content").length >= 1 && options == "destroy"){
-			$(default_input[1]).removeClass("hidden").siblings().remove().unwrap();
-			$(default_input[1]).unwrap();
+			var place_to_append = default_input.closest(".madoka_content");
+			place_to_append.after(default_input.removeClass("madoka_input"));
+			place_to_append.remove();
 		}
 
-		return input;
+		return default_input;
 	};
 
 	function section_template(active_id, placeholder){

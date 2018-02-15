@@ -1,21 +1,17 @@
 (function ( $ ) {
 	$.fn.hoshi = function( options ) {
 		var default_input = this;
-		var input = default_input.clone();
-
-		console.log(options)
-		console.log(input.closest(".hoshi_content").length)
 
 		if(options != "destroy" && default_input.closest(".hoshi_content").length == 0){
-			var selected_color = (input.attr("data-color") != undefined && input.attr("data-color") != "") ? input.attr("data-color") : "#ff5500";
+			var selected_color = (default_input.attr("data-color") != undefined && default_input.attr("data-color") != "") ? default_input.attr("data-color") : "";
 			var template_id = "hideo_"+ Math.floor((Math.random() * 10000) + 1);
-			var active_id = (input.attr("id") != undefined ? input.attr("id") :  template_id)
-			var placeholder = (input.attr("placeholder") != undefined ? input.attr("placeholder") :  "Hoshi")
+			var active_id = (default_input.attr("id") != undefined && default_input.attr("id") != "" != undefined ? default_input.attr("id") : template_id)
+			var placeholder = (default_input.attr("placeholder") != undefined ? default_input.attr("placeholder") :  "Hoshi")
 
 			default_input.wrap('<div class="hoshi_content">')
 						 .closest(".hoshi_content")
 						 .append(section_template(active_id, placeholder))
-						 .prepend(input.addClass("hoshi_input").attr("id", active_id).attr("data-color", selected_color))
+						 .prepend(default_input.addClass("hoshi_input").attr("id", active_id).attr("data-color", selected_color))
 
 
 			$(".hoshi_content").click(function(){
@@ -34,15 +30,14 @@
 					}
 				})
 			});
-
-			default_input.addClass("hidden");
 		}
 		else if(default_input.closest(".hoshi_content").length >= 1 && options == "destroy"){
-			$(default_input[1]).removeClass("hidden").siblings().remove().unwrap();
-			$(default_input[1]).unwrap();
+			var place_to_append = default_input.closest(".hoshi_content");
+			place_to_append.after(default_input.removeClass("hoshi_input"));
+			place_to_append.remove();
 		}
 
-		return input;
+		return default_input;
 	};
 
 	function section_template(active_id, placeholder){
@@ -59,7 +54,7 @@
 
 		function frame() {
 			if(type == "add"){
-				elem.css("background-color", color); 
+				elem.css("background-color", (color != undefined && color != "" ? color : "#ff5500" )); 
 
 				if (width >= 100) {
 					clearInterval(id);
