@@ -13,9 +13,9 @@ $(document).ready(function(){
 
 	        if($(".users.page_0").prev().length != 0){
 		        var first_page = setInterval(first_page_timer, 5)
-		        var second_page = setInterval(second_page_timer, 6)
-		        var third_page = setInterval(third_page_timer, 7)
-		        var fourth_page = setInterval(fourth_page_timer, 8)
+		        var second_page = setInterval(second_page_timer, 10)
+		        var third_page = setInterval(third_page_timer,20)
+		        var fourth_page = setInterval(fourth_page_timer, 30)
 		        function first_page_timer(){
 					var page_0 = $(".users.page_0");
 

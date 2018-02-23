@@ -15,7 +15,7 @@
   padding: 30px;
   width: 500px;
   border: 1px solid #ebe9eb;
-  border-radius: 10px;
+  border-radius: 15px;
   background: white;
   text-align: left;
   height: 300px;
@@ -23,18 +23,18 @@
 }
 #wrapper #users .users.page_1 {
   top: 110px;
-  width: 480px;
-  margin-left: 9px;
+  width: 460px;
+  margin-left: 20px;
 }
 #wrapper #users .users.page_2 {
   top: 100px;
-  width: 460px;
-  margin-left: 19px;
+  width: 420px;
+  margin-left: 40px;
 }
 #wrapper #users .users.page_3 {
   top: 90px;
-  width: 440px;
-  margin-left: 29px;
+  width: 380px;
+  margin-left: 60px;
 }
 #wrapper #users .users .user_info {
   height: 105px;
