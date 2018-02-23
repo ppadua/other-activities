@@ -26,4 +26,11 @@ $(document).ready(function(){
     $( "#hoshi" ).hoshi();
     $( "#juro" ).juro();
     $( "#madoka" ).madoka();
+
+    $( ".test1" ).input_style("hideo");
+    $( ".test2" ).input_style("haruki");
+    $( ".test3" ).input_style("hoshi");
+    $( ".test4" ).input_style("juro");
+    $( ".test5" ).input_style("madoka");
+
 });

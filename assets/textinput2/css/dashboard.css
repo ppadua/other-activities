@@ -1,0 +1,473 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(/assets/textinput/css/fonts/Roboto-Regular.ttf);
+}
+* {
+  font-family: myFirstFont;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+h3 {
+  color: #d6d8d9;
+}
+#wrapper {
+  text-align: center;
+  /* Ruri */
+  /* End of  Ruri */
+  /* Manami */
+  /* End of  Manami */
+  /* Chisato */
+  /* End of Chisato */
+  /* Kohana */
+  /* End of Kohana */
+  /*Fumi */
+}
+#wrapper section#ruri {
+  padding: 72px 0;
+  display: block;
+  background: #2f3238;
+  color: #fff;
+  font-size: 150%;
+}
+#wrapper section#ruri .ruri_content {
+  position: relative;
+  display: inline-block;
+  margin: 24px;
+  width: 350px;
+}
+#wrapper section#ruri .ruri_input {
+  float: right;
+  border: none;
+  width: 100%;
+  background: transparent;
+  padding: 15px 0;
+  margin-bottom: 2em;
+  color: #fff;
+  font-size: 22px;
+  outline: none;
+}
+#wrapper section#ruri .ruri_label {
+  color: #696969;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  padding: 10px 0 5px;
+  pointer-events: none;
+}
+#wrapper section#ruri .ruri_span {
+  position: relative;
+  display: block;
+  padding: 0;
+  transform-origin: 0 0;
+  transition: transform 0.3s, color 0.3s;
+}
+#wrapper section#ruri .ruri_label::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  background: #B7C3AC;
+  left: 0;
+  top: 100%;
+  transform-origin: 50% 100%;
+  transition: transform 0.3s, background-color 0.3s;
+}
+#wrapper section#ruri .ruri_input:focus + .ruri_label::after,
+#wrapper section#ruri .ruri_active .ruri_label::after {
+  background: #a3d39c;
+  transform: scale3d(1, 0.25, 1);
+}
+#wrapper section#ruri .ruri_input:focus + .ruri_label .ruri_span,
+#wrapper section#ruri .ruri_active .ruri_label .ruri_span {
+  color: #a3d39c;
+  transform: translate3d(0, 48px, 0) scale3d(0.655, 0.655, 1);
+}
+#wrapper section#manami {
+  padding: 72px 0;
+  background: #e8e8e8;
+  font-size: 150%;
+}
+#wrapper section#manami .manami_content {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 24px;
+  width: 350px;
+  vertical-align: top;
+  overflow: hidden;
+}
+#wrapper section#manami .manami_content .manami_label {
+  display: inline-block;
+  float: right;
+  color: #696969;
+  font-weight: bold;
+  width: 100%;
+  position: absolute;
+  text-align: left;
+  padding: 12px 0;
+  pointer-events: none;
+  font-size: 24px;
+}
+#wrapper section#manami .manami_content .manami_label .manami_span {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  transform-origin: 0 0;
+  transition: transform 0.2s, color 0.2s;
+}
+#wrapper section#manami .manami_content .manami_input {
+  position: relative;
+  display: block;
+  float: right;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  padding: 12px;
+  margin-bottom: 49px;
+  color: #f9f7f6;
+  z-index: 100;
+  opacity: 0;
+  font-size: 26px;
+}
+#wrapper section#manami .manami_label::before,
+#wrapper section#manami .manami_label::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+#wrapper section#manami .manami_label::before {
+  height: 100%;
+  background: #A8A8A8;
+  top: 0;
+  transform: translate3d(0, -100%, 0);
+  transition: transform 0.2s;
+}
+#wrapper section#manami .manami_label::after {
+  height: 2px;
+  background: #A8A8A8;
+  top: 100%;
+  transition: opacity 0.2s;
+}
+#wrapper section#manami .manami_input:focus,
+#wrapper section#manami .manami_active .manami_input {
+  opacity: 1;
+  transition: opacity 0s 0.2s;
+}
+#wrapper section#manami .manami_label::before,
+#wrapper section#manami .manami_label::after,
+#wrapper section#manami .manami_span,
+#wrapper section#manami .manami_input:focus,
+#wrapper section#manami .manami_active .manami_input {
+  transition-timing-function: cubic-bezier(0, 0.25, 0.5, 1);
+}
+#wrapper section#manami .manami_input:focus + .manami_label::before,
+#wrapper section#manami .manami_active .manami_label::before {
+  transform: translate3d(0, 0, 0);
+}
+#wrapper section#manami .manami_inputi:focus + .manami_label::after,
+#wrapper section#manami .manami_active .manami_label::after {
+  opacity: 0;
+}
+#wrapper section#manami .manami_input:focus + .manami_label .manami_span,
+#wrapper section#manami .manami_active .manami_label .manami_span {
+  color: #cbc4c6;
+  transform: translate3d(0, 52px, 0) scale3d(0.65, 0.65, 1);
+}
+#wrapper section#chisato {
+  font-size: 150%;
+  padding: 72px 0;
+  background-color: #2f3238;
+}
+#wrapper section#chisato .chisato_content {
+  display: none;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 24px;
+  width: 350px;
+  vertical-align: top;
+  padding-top: 24px;
+}
+#wrapper section#chisato .chisato_input {
+  position: relative;
+  display: block;
+  float: right;
+  border-radius: 0;
+  font-weight: 400;
+  font-size: 24px;
+  outline: none;
+  width: 100%;
+  padding: 20px 8px;
+  background: transparent;
+  border: 2px solid;
+  color: #b5b5b5;
+  transition: border-color 0.25s;
+}
+#wrapper section#chisato .chisato_label {
+  display: inline-block;
+  float: right;
+  font-weight: bold;
+  font-size: 70.25%;
+  user-select: none;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: left;
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  transform: translate3d(0, 50px, 0);
+}
+#wrapper section#chisato .chisato_span {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0 18px;
+  font-weight: 400;
+  color: #b5b5b5;
+}
+#wrapper section#chisato .chisato_span::after {
+  content: attr(data-content);
+  position: absolute;
+  top: -200%;
+  left: 0;
+  color: #da6484;
+  font-weight: 800;
+}
+#wrapper section#chisato .chisato_input:focus,
+#wrapper section#chisato .chisato_active .chisato_input {
+  border-color: #da6484;
+}
+#wrapper section#chisato .chisato_input:focus + .chisato_label,
+#wrapper section#chisato .chisato_active .chisato_label {
+  animation: chisato-1 0.25s forwards;
+}
+#wrapper section#chisato .chisato_input:focus + .chisato_label .chisato_span,
+#wrapper section#chisato .chisato_active .chisato_span {
+  animation: chisato-2 0.25s forwards ease-in;
+}
+@keyframes chisato-1 {
+  0%,
+  70% {
+    transform: translate3d(0, 50px, 0);
+  }
+  71%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes chisato-2 {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  70%,
+  71% {
+    -webkit-transform: translate3d(0, 125%, 0);
+    transform: translate3d(0, 125%, 0);
+    opacity: 0;
+    -webkit-animation-timing-function: ease-out;
+  }
+  100% {
+    color: transparent;
+    -webkit-transform: translate3d(0, 200%, 0);
+    transform: translate3d(0, 200%, 0);
+  }
+}
+#wrapper section#kohana {
+  font-size: 150%;
+  background-color: #e8e8e8;
+  padding: 72px 0;
+}
+#wrapper section#kohana .kohana_content {
+  position: relative;
+  display: inline-block;
+  margin: 24px;
+  width: 350px;
+  vertical-align: top;
+  overflow: hidden;
+  background: #fff;
+}
+#wrapper section#kohana .kohana_input {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 19px;
+  border: none;
+  font-weight: 400;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  padding-left: 66px;
+  color: #6a7989;
+  font-size: 23px;
+}
+#wrapper section#kohana .kohana_label {
+  display: inline-block;
+  float: right;
+  padding: 0 22px;
+  font-weight: bold;
+  font-size: 60.25%;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  pointer-events: none;
+  color: #D2D2D2;
+}
+#wrapper section#kohana .kohana_span {
+  position: relative;
+  padding: 24px 0;
+  width: 100%;
+  display: inline-block;
+  width: auto;
+  transform: translate3d(-24px, 0, 0);
+  transition: transform 0.3s, opacity 0.3s;
+}
+#wrapper section#kohana .kohana_icon {
+  color: #ddd;
+  font-size: 150%;
+  display: inline-block;
+  margin-top: 21px;
+  transform: translate3d(-48px, 0, 0);
+  transition: transform 0.3s;
+}
+#wrapper section#kohana .kohana_input:focus + .kohana_label .kohana_span,
+#wrapper section#kohana .kohana_active .kohana_span {
+  opacity: 0;
+  transform: translate3d(100px, 0, 0);
+}
+#wrapper section#kohana .kohana_span,
+#wrapper section#kohana .kohana_icon,
+#wrapper section#kohana .kohana_input:focus + .kohana_label .kohana_span,
+#wrapper section#kohana .kohana_active .kohana_span {
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+#wrapper section#kohana .kohana_input:focus + .kohana_label .kohana_icon,
+#wrapper section#kohana .kohana_active .kohana_icon {
+  transform: translate3d(0, 0, 0);
+}
+#wrapper #fumi {
+  padding: 72px 0;
+  font-size: 150%;
+  background-color: #f0efee;
+}
+#wrapper #fumi .fumi_content {
+  position: relative;
+  display: inline-block;
+  margin: 24px;
+  width: 350px;
+  vertical-align: top;
+  background: #fff;
+  overflow: hidden;
+  padding: 6px 0;
+}
+#wrapper #fumi .fumi_input {
+  position: relative;
+  display: block;
+  float: right;
+  border: none;
+  border-radius: 0;
+  font-weight: 400;
+  outline: none;
+  background: transparent;
+  padding: 26px 15px 7px 61px;
+  width: 100%;
+  font-size: 25px;
+  color: #00aeef;
+}
+#wrapper #fumi .fumi_label {
+  display: inline-block;
+  float: right;
+  color: #696969;
+  font-weight: bold;
+  font-size: 60.25%;
+  user-select: none;
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  padding-left: 62px;
+  pointer-events: none;
+}
+#wrapper #fumi .fumi_span {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 1.7em 0;
+  transform-origin: 0 0;
+  display: inline-block;
+}
+#wrapper #fumi .fumi_icon {
+  color: #ddd;
+  font-size: 150%;
+  width: 48px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 24px 0 0 21px;
+}
+#wrapper #fumi .fumi_content::after {
+  content: '';
+  width: 1px;
+  position: absolute;
+  top: 0.5em;
+  bottom: 0.5em;
+  left: 2.5em;
+  background: #f0f0f0;
+  z-index: 100;
+}
+#wrapper #fumi .fumi_input:focus + .fumi_label .fumi_span,
+#wrapper #fumi .fumi_active .fumi_span {
+  animation: animation_input 0.3s forwards;
+}
+@keyframes animation_input {
+  50% {
+    transform: translate3d(0, 3em, 0);
+  }
+  51% {
+    transform: translate3d(0, -3em, 0) scale3d(0.85, 0.85, 1);
+  }
+  100% {
+    color: #a3a3a3;
+    transform: translate3d(0, -1.1em, 0) scale3d(0.85, 0.85, 1);
+  }
+}
+#wrapper #fumi .fumi_input:focus + .fumi_label .fumi_icon,
+#wrapper #fumi .fumi_active .fumi_icon {
+  animation: animation_icon 0.3s forwards;
+}
+@keyframes animation_icon {
+  50% {
+    opacity: 1;
+    transform: translate3d(0, -3em, 0);
+  }
+  50.25% {
+    opacity: 0;
+    transform: translate3d(0, -3em, 0);
+  }
+  50.75% {
+    opacity: 0;
+    transform: translate3d(0, 3em, 0);
+  }
+  51% {
+    opacity: 1;
+    transform: translate3d(0, 3em, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    color: #00aeef;
+  }
+}
+.hidden {
+  display: none;
+}

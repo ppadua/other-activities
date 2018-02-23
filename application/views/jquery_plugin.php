@@ -10,6 +10,7 @@
 	<script src="/assets/jquery_plugin/js/scripts/jquery.juro.js?<?= time()?>"></script>
 	<script src="/assets/jquery_plugin/js/scripts/jquery.madoka.js?<?= time()?>"></script>
 	<script src="/assets/jquery_plugin/js/scripts/jquery.hoshi.js?<?= time()?>"></script>
+	<script src="/assets/jquery_plugin/js/scripts/jquery.input.js?<?= time()?>"></script>
 	<script src="/assets/jquery_plugin/js/script.js?<?= time()?>"></script>
 
 	<link rel="stylesheet" href="/assets/jquery_plugin/css/dashboard.css?<?= time()?>">
@@ -22,11 +23,17 @@
 	<link rel="stylesheet" href="/assets/jquery_plugin/css/jquery.madoka.css?<?= time()?>">
 </head>
 <body>
-	<input type="text" name="" id="hideo">
+    <input type="text" class="test1" name="test" id="" data-color="">
+  <input type="text" class="test2" name="test" id="" data-color="">
+    <input type="text" class="test3" name="test" id="" data-color="">
+    <input type="text" class="test4" name="test" id="" data-color="">
+    <input type="text" class="test5" name="test" id="" data-color="">
+
+	 <!--  <input type="text" name="" id="hideo">
     <input type="text" name="" id="hoshi">
     <input type="text" name="" id="juro">
     <input type="text" name="" id="harukie">
-    <input type="text" name="" id="madoka">
+    <input type="text" name="" id="madoka"> -->
 </body>
 </html>
 

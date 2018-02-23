@@ -44,6 +44,7 @@ $route['textinput'] = "welcome/textinput";
 $route['textinput2'] = "welcome/textinput2";
 $route['survey'] = "welcome/survey";
 $route['jquery_plugin'] = "welcome/jquery_plugin";
+$route['card_motion'] = "welcome/card_motion";
 $route['404_override'] = '';
 
 

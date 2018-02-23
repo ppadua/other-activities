@@ -26,6 +26,10 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('textinput2');
 	}
+	public function card_motion()
+	{
+		$this->load->view('card_motion');
+	}
 }
 
 /* End of file welcome.php */

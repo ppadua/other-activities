@@ -3,9 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Text Input</title>
-	<link rel="stylesheet" href="/assets/textinput/css/dashboard.css?<?= time()?>">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="/assets/textinput/js/dashboard.js?<?= time()?>"></script>
+	<link rel="stylesheet" href="/assets/textinput/css/dashboard.css?<?= time()?>">
 	<link rel="stylesheet" href="../assets/asana/css/vendor/font-awesome/font-awesome.min.css">
 	
 </head>
