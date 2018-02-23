@@ -4,6 +4,7 @@ $(document).ready(function(){
 
 	$("body").on("click", ".next, .prev", function(){
 		var button = $(this);
+		button.attr("href", "javascript:void(0)");
 
 		if($(button).hasClass("next")){
 			var user_top_length_0 = $(".users.page_0").css("top") != undefined ? parseInt($(".users.page_0").css("top").replace("px", "")) : "";
@@ -14,8 +15,8 @@ $(document).ready(function(){
 	        if($(".users.page_0").prev().length != 0){
 		        var first_page = setInterval(first_page_timer, 5)
 		        var second_page = setInterval(second_page_timer, 10)
-		        var third_page = setInterval(third_page_timer,20)
-		        var fourth_page = setInterval(fourth_page_timer, 30)
+		        var third_page = setInterval(third_page_timer,15)
+		        var fourth_page = setInterval(fourth_page_timer,20)
 		        function first_page_timer(){
 					var page_0 = $(".users.page_0");
 
@@ -26,7 +27,6 @@ $(document).ready(function(){
 		        		user_top_length_0++;
 
 			        	if(user_top_length_0 > 180){
-			        		user_top_length_0 = 180;
 			    			if(page_0.prev().length == 1){
 				    			page_0.prev().addClass("page_0");
 				    			page_0.removeClass("page_0");
@@ -85,37 +85,52 @@ $(document).ready(function(){
 
 		        		clearInterval(fourth_page);
 		        	}
+
+				   button.attr("href", "");
 	        	}
         	}
 		}
 		else{
 			var first_prev_page = $(".users.page_0");
 	       	var user_top_length_0 = first_prev_page.next().css("top") != undefined ? parseInt(first_prev_page.next().css("top").replace("px", "")) : "";
-	        var first_page = setInterval(first_page_timer, 1)
+	        if($(".users.page_0").next().length != 0){
+		        var first_page = setInterval(first_page_timer, 5)
+		        function first_page_timer(){
+		        	if(first_prev_page.next().length != 0){
+	        			user_top_length_0--;
 
-	        function first_page_timer(){
-	        	if(first_prev_page.next().length != 0){
-        			user_top_length_0--;
+			        	if(first_prev_page.next().length == 1){
+							first_prev_page.next()
+			        					   .addClass("page_0")
+										   .fadeIn()
+										   .css("top", user_top_length_0);
+			        		
+			        		first_prev_page.css("top", 110)
+							        	   .removeClass("page_0")
+							        	   .addClass("page_1");
+			        	}
 
-		        	if(first_prev_page.next().length == 1){
-		        		first_prev_page.css("top", "").removeClass("page_0").addClass("page_1").next().addClass("page_0").fadeIn();
-	    				$(first_prev_page).next().css("top", user_top_length_0);
-		        	}
+			        	if(first_prev_page.prev().length == 1){
+			        		first_prev_page.prev()
+							        	   .css("top", 100)
+							        	   .addClass("page_2")
+							        	   .removeClass("page_1");
+			        	}
 
-		        	if(first_prev_page.prev().length == 1){
-		        		first_prev_page.prev().css("top", "").removeClass("page_1").addClass("page_2");
-	    				$(first_prev_page).css("top", 110);
-	    				$(first_prev_page).prev().css("top", 100);
-		        	}
+			        	if(first_prev_page.prev().prev().length == 1){
+			        		first_prev_page.prev().prev().css("top", 90).addClass("page_3").removeClass("page_2");
+			        	}
 
-		        	if(first_prev_page.prev().prev().length == 1){
-		        		first_prev_page.prev().prev().css("top", "").removeClass("page_2").addClass("page_3").prev().removeClass("page_3").addClass("hidden");
-    					$(first_prev_page).prev().prev().css("top", 90);
-		        	}
-
-			        if(user_top_length_0 == 120)
-			      		clearInterval(first_page);
-		      	}
+			        	if(first_prev_page.prev().prev().prev().length == 1){
+			        		first_prev_page.prev().prev().prev().addClass("hidden").removeClass("page_3");
+			        	}
+	        			
+				        if(user_top_length_0 <= 120){
+				      		clearInterval(first_page);
+				      		button.attr("href", "");
+				        }
+			      	}
+	        	}
         	}
 		}
 	})
