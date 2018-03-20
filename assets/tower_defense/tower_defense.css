@@ -1,0 +1,139 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+table#table_game{
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+tr td{
+	width: 50px;
+	height: 50px;
+	/*border: 1px solid #0ca0ed;*/
+	text-align: center;
+}
+tr td.soil_tile{
+	width: 50px;
+	height: 50px;
+	background-color: #a18e7f;
+
+}
+tr td.water_tile , tr td.water_defense_tile{
+	width: 50px;
+	height: 50px;
+	background-color: #cadef9;
+}
+tr td.grass_tile{
+	width: 50px;
+	height: 50px;
+	background-color: #65be84;
+}
+tr td.start_tile{
+	width: 50px;
+	height: 50px;
+	background-color: #a18e7f;
+}
+tr td.almost_start_tile{
+	width: 50px;
+	height: 50px;
+	background-color: #a18e7f;
+}
+tr td.end_tile{
+	width: 50px;
+	height: 50px;
+	background-color: #a18e7f;
+}
+tr td.none_tile{
+	width: 50px;
+	height: 50px;
+}
+
+#icons i{
+    border: 1px solid black;
+    font-size: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#icons{
+	display: inline-block;
+	vertical-align: top;
+}
+#game_info{
+	display: inline-block;
+}
+#start_game{
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;height: 50px;
+}
+
+td{
+	text-align: center;
+	font-size: ;
+}
+td .fa{
+	font-size: 30px;
+}
+
+
+.is_elite{
+	color: red;
+	font-size: 44px !important;
+}
+
+.active{
+	background-color: #2a77e3;
+}
+.disabled{
+	background-color: #666666;
+}
+
+#life_points{color : green}
+
+
+#game_over_modal {
+    position: absolute;
+    left: 17%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 50%;
+    padding: 40px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    line-height: 60px;
+}
+
+#game_over_modal button{
+	padding: 20px 30px;
+	background: #009e0f;
+	border-color: #009e0f;
+	color: white;
+}
+
+.hidden{
+	display: none;
+}
+
+.show_range{
+	width: 50px;
+    height: 50px;
+    background: violet;
+    opacity: .5;
+    position: absolute;
+    transform: translate(0%, -50%);
+
+}
+
+td span{
+	color: yellow;
+    transform: translate(-50%, -50%);
+	position: absolute;
+}
+td i{
+    transform: translate(-50%, -50%);
+	position: absolute;
+}

@@ -45,6 +45,25 @@ $route['textinput2'] = "welcome/textinput2";
 $route['survey'] = "welcome/survey";
 $route['jquery_plugin'] = "welcome/jquery_plugin";
 $route['card_motion'] = "welcome/card_motion";
+$route['tower_defense'] = "welcome/tower_defense";
+
+$route['animation_1'] = "welcome/animation_1";
+$route['animation_2'] = "welcome/animation_2";
+$route['animation_3'] = "welcome/animation_3";
+$route['animation_4'] = "welcome/animation_4";
+$route['animation_5'] = "welcome/animation_5";
+$route['animation_6'] = "welcome/animation_6";
+$route['animation_7'] = "welcome/animation_7";
+$route['animation_8'] = "welcome/animation_8";
+$route['animation_9'] = "welcome/animation_9";
+$route['animation_10'] = "welcome/animation_10";
+$route['animation_11'] = "welcome/animation_11";
+$route['animation_12'] = "welcome/animation_12";
+$route['animation_13'] = "welcome/animation_13";
+$route['animation_14'] = "welcome/animation_14";
+$route['animation_15'] = "welcome/animation_15";
+$route['animation_16'] = "welcome/animation_16";
+$route['animation_17'] = "welcome/animation_17";
 $route['404_override'] = '';
 
 
